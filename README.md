@@ -1,4 +1,4 @@
-# Trust in AI
+# The Trustability of AI
 
 ## Getting Started
 
@@ -20,9 +20,10 @@ install.packages(c("brms", "targets", "tarchetypes", "tidyverse"))
 
 ## Help
 
-Any issues, please email scott.claessens@gmail.com or landese@outlook.com.
+Any issues, please email scott.claessens@gmail.com or ethan.landes@gmail.com.
 
 ## Authors
 
 Scott Claessens, scott.claessens@gmail.com
-Ethan Landes, landese@outlook.com
+
+Ethan Landes, ethan.landes@gmail.com
