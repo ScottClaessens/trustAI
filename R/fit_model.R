@@ -1,5 +1,5 @@
 # function to random intercept model
-fit_model <- function(data, measure = "Felicity") {
+fit_model <- function(data, measure = "Felicity", sample_prior = "no") {
   # subset data
   data <- filter(data, Measure == measure)
   # fit model
@@ -11,6 +11,7 @@ fit_model <- function(data, measure = "Felicity") {
       prior(normal(0, 2), class = Intercept),
       prior(exponential(3), class = sd)
     ),
+    sample_prior = sample_prior,
     chains = 4,
     cores = 4,
     seed = 2113
