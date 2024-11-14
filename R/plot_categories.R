@@ -2,8 +2,8 @@
 plot_categories <- function(data, measure, category_means) {
   # category labels
   labels <- c(
-    "Agents"            = "Agents",
-    "Group_Agents"      = "Group agents",
+    "Agents"            = "Humans",
+    "Group_Agents"      = "Groups",
     "AI"                = "AI",
     "Animals"           = "Animals",
     "Animate_Artifacts" = "Animate artifiacts",

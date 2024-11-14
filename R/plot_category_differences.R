@@ -1,5 +1,16 @@
 # function to plot category differences
 plot_category_differences <- function(fit, measure, category_bfs) {
+  # category labels
+  labels <- c(
+    "Agents"            = "Humans",
+    "Group agents"      = "Groups",
+    "AI"                = "AI",
+    "Animals"           = "Animals",
+    "Animate artifacts" = "Animate artifacts",
+    "Inanimate nature"  = "Inanimate nature",
+    "Food"              = "Food",
+    "Abstract"          = "Abstract"
+  )
   # prepare bfs for plotting
   category_bfs$category <- 
     str_to_sentence(
@@ -59,6 +70,7 @@ plot_category_differences <- function(fit, measure, category_bfs) {
       name = "Posterior log odds difference\nbetween category and AI",
       limits = xlims
       ) +
+    scale_y_discrete(labels = function(y) labels[y]) +
     theme_classic() +
     theme(axis.title.y = element_blank())
   # save
