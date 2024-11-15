@@ -41,7 +41,7 @@ plot_categories <- function(data, measure, category_means) {
     scale_y_continuous(
       name = ifelse(
         measure == "Felicity",
-        "\nI trust [item]",
+        "Does 'I trust [item]' \nsound weird or natural?",
         "If someone said 'I trust [item]',\nwould that sentence make sense?"
       ),
       breaks = 1:7,

@@ -1,25 +1,25 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-category_bfs_Felicity|stem|575fec3399f3a1fb|8372d378abebdb08|9192f97ef692c29a|-1593438447||t20041.6111223984s|922598d76622d54c|287|rds|local|vector|||1.5||
-category_bfs_Sense|stem|7a0d878fdab25ed1|60b1d60d66487779|5d07a46aabac6255|772685274||t20041.6111035054s|d5bf79044af760da|286|rds|local|vector|||1.78||
-category_means_Felicity|stem|b5296b3841bd7f2c|9749f62876f80f3c|87e122d4ebfd0324|544398168||t20041.579154221s|05a8c15af5ed1b7e|238598|rds|local|vector|||0.35||
-category_means_Sense|stem|c63d4dae07488794|cee8c48c9560c239|b1dc4338fca4982a|905984806||t20041.5791497545s|a8d085704d15ae5e|237270|rds|local|vector|||0.37||
-data|stem|185af340359da508|e6d67e545ba4d223|d2c465dfe6f2a1f0|33550471||t20041.5698776335s|e01d21a1eef7c65c|6138|rds|local|vector|||0.37||
-data_file|stem|3ec0b6ebdee92cf6|cf06a36a4dd9338d|2c530c1562a7fbd1|-679625259|data/pilot/pilot_data_clean.csv|t20041.5687480811s|ac1e4ab0f2a654c1|167596|file|local|vector|||1.39||
+category_bfs_Felicity|stem|575fec3399f3a1fb|8372d378abebdb08|59d5fe2941a94b88|-1593438447||t20041.7345414595s|922598d76622d54c|287|rds|local|vector|||1.38||
+category_bfs_Sense|stem|7a0d878fdab25ed1|60b1d60d66487779|a44c17bb40788122|772685274||t20041.7345255736s|d5bf79044af760da|286|rds|local|vector|||1.66||
+category_means_Felicity|stem|b5296b3841bd7f2c|9749f62876f80f3c|acc810f28a358bf1|544398168||t20041.7345002545s|05a8c15af5ed1b7e|238598|rds|local|vector|||0.38||
+category_means_Sense|stem|c63d4dae07488794|cee8c48c9560c239|230b84c7f7618d6c|905984806||t20041.7344957396s|a8d085704d15ae5e|237270|rds|local|vector|||0.38||
+data|stem|185af340359da508|e6d67e545ba4d223|d2c465dfe6f2a1f0|33550471||t20041.7252122472s|e01d21a1eef7c65c|6138|rds|local|vector|||0.09||
+data_file|stem|3ec0b6ebdee92cf6|cf06a36a4dd9338d|2c530c1562a7fbd1|-679625259|data/pilot/pilot_data_clean.csv|t20041.5687480811s|ac1e4ab0f2a654c1|167596|file|local|vector|||0.84|package bayestestR was built under R version 4.4.2|
 extract_category_bayes_factors|function|ddfff67ce49011fc|||||||||||||||
 extract_category_means|function|a82b4455bca1e2aa|||||||||||||||
 extract_item_means|function|355c3ca3c0681f98|||||||||||||||
-fit_Felicity|stem|bb3dc9becfab1188|3a99a2766d5a8da5|a405b1c20da35c85|575438587||t20041.5785976015s|5aaf6a48ffa3cba3|10591535|rds|local|vector|||364.44||
+fit_Felicity|stem|556466864edca15b|3a99a2766d5a8da5|a405b1c20da35c85|575438587||t20041.733935587s|83b2d34559ffef5d|10600952|rds|local|vector|||373.16||
 fit_model|function|27da6f4b2f4d4baa|||||||||||||||
-fit_Sense|stem|c7632e0bcb120aad|97c5738563298daf|a405b1c20da35c85|-1706943043||t20041.574373713s|99d6d7ba7b7fc483|10454265|rds|local|vector|||387.98||
-item_means_Felicity|stem|18d37b287c4c3412|20509dfb9bb218d1|ed87f9262a2efed2|-1150983435||t20041.5791603581s|2c8d879f8a47a311|792599|rds|local|vector|||0.48||
-item_means_Sense|stem|7c5fd775f80a057d|a78a83aab43768fe|379dbce141f92961|1498063739||t20041.5791452454s|ede336714bd5a7c4|788924|rds|local|vector|||0.5||
-plot_categories|function|0eee5fa0544c5fb0|||||||||||||||
-plot_category_differences|function|3eb050b8dcefd4ff|||||||||||||||
-plot_category_Felicity|stem|3d2f6f655c223cf1|1ed4c40d99bccd96|dfa3b19ec1a26bec|1404928083||t20041.7224955143s|cada1a4edf042522|1432706|rds|local|vector|||0.18||
-plot_category_Sense|stem|9c46a72c3b722931|7c280af2310c8c12|7e959658c3cdebdd|375313541||t20041.7224920219s|762558a9936075bf|1425935|rds|local|vector|||0.22||
-plot_diff_Felicity|stem|6bfb5be50dea4be9|6e6bb859dcc9d566|8d579cc2cf6dad78|-891023891||t20041.6119556081s|57aa95ab45979b65|12766025|rds|local|vector|||0.43|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
-plot_diff_Sense|stem|761ad57b411aeff8|3af94a79cc1f5901|5339467ef1ca8669|-136787411||t20041.6119415095s|225484fc3c337771|12621857|rds|local|vector|||0.61|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
-plot_item_Felicity|stem|87a980fe886b61f5|c66961c18e55cd9b|45b36ad3dcc8a107|-2032308309||t20041.611902884s|c4ed493f65d90044|4204084|rds|local|vector|||0.16||
-plot_item_Sense|stem|39877c61e52fccc2|56ed3a6e71df0368|f9e5acec7c703d4d|1309094832||t20041.6118911458s|4cb8c93c6a6e1f5f|4184329|rds|local|vector|||0.44||
+fit_Sense|stem|bffb4592ec35c3fe|97c5738563298daf|a405b1c20da35c85|-1706943043||t20041.7296105034s|d58cafe847bc5618|10454203|rds|local|vector|||379.53||
+item_means_Felicity|stem|18d37b287c4c3412|20509dfb9bb218d1|5469ed5327af6591|-1150983435||t20041.734506381s|2c8d879f8a47a311|792599|rds|local|vector|||0.47||
+item_means_Sense|stem|7c5fd775f80a057d|a78a83aab43768fe|ceb99945310f5cce|1498063739||t20041.7344911786s|ede336714bd5a7c4|788924|rds|local|vector|||0.52||
+plot_categories|function|2a274c2c87ebb90d|||||||||||||||
+plot_category_differences|function|4e28eed958068dac|||||||||||||||
+plot_category_Felicity|stem|6e0c28c75c6fa03c|1ed4c40d99bccd96|4667844d4ff48ef2|1404928083||t20042.5594836208s|cd922dddd40e84f0|1432799|rds|local|vector|||0.25||
+plot_category_Sense|stem|51a1735e01ae3c47|7c280af2310c8c12|22831ae2509b2bce|375313541||t20042.5593929702s|d13e56c04525452e|1426003|rds|local|vector|||0.24||
+plot_diff_Felicity|stem|283f10c0a948f999|6e6bb859dcc9d566|9e93318785c005fe|-891023891||t20041.8797586497s|8aa021b407035f76|12792243|rds|local|vector|||0.28|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
+plot_diff_Sense|stem|11a578e55513a661|3af94a79cc1f5901|f20ff829361258be|-136787411||t20041.8797458344s|09c22a3cfd072911|12632526|rds|local|vector|||0.57|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
+plot_item_Felicity|stem|87a980fe886b61f5|c66961c18e55cd9b|45b36ad3dcc8a107|-2032308309||t20041.7345588844s|c4ed493f65d90044|4204084|rds|local|vector|||0.16||
+plot_item_Sense|stem|39877c61e52fccc2|56ed3a6e71df0368|f9e5acec7c703d4d|1309094832||t20041.7345473154s|4cb8c93c6a6e1f5f|4184329|rds|local|vector|||0.22||
 plot_items|function|a231747f3c752f13|||||||||||||||
-prior_fit|stem|38bc0bb557ea4abd|450b2398b3767237|a405b1c20da35c85|592291161||t20041.5791389032s|f745f0f07b9ef95a|10681953|rds|local|vector|||46.25|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+prior_fit|stem|55fbc962f010e377|450b2398b3767237|a405b1c20da35c85|592291161||t20041.7344845806s|b6efb7458e4d852c|10686413|rds|local|vector|||46.91|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
