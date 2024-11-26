@@ -1,5 +1,5 @@
-# function to extract bayes factors for differences from AI category
-extract_category_bayes_factors <- function(fit, prior_fit) {
+# function to extract bayes factors for differences from AI category in study 1
+extract_study1_category_bayes_factors <- function(fit, prior_fit) {
   # get categories (excluding AI)
   categories <- unique(fit$data$Category)[-1]
   # function to get log bayes factor

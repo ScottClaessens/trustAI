@@ -1,5 +1,5 @@
-# function to extract category means from model
-extract_category_means <- function(fit) {
+# function to extract category means from study 1
+extract_study1_category_means <- function(fit) {
   # tibble with new data
   d <- tibble(Category = unique(fit$data$Category))
   # get fitted values from the model

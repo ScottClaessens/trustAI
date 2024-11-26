@@ -1,5 +1,5 @@
-# function to plot category differences
-plot_category_differences <- function(fit, measure, category_bfs) {
+# function to plot category differences in study 1
+plot_study1_category_differences <- function(fit, measure, category_bfs) {
   # category labels
   labels <- c(
     "Agents"            = "Humans",
@@ -76,7 +76,7 @@ plot_category_differences <- function(fit, measure, category_bfs) {
   # save
   ggsave(
     plot = p,
-    filename = paste0("plots/category_difference_", measure, ".pdf"),
+    filename = paste0("plots/study1_category_difference_", measure, ".pdf"),
     width = 5,
     height = 3
   )

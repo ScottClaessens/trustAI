@@ -1,5 +1,5 @@
-# function to extract item means from model
-extract_item_means <- function(fit) {
+# function to extract item means from study 1 model
+extract_study1_item_means <- function(fit) {
   # tibble with new data
   d <-
     fit$data %>%
