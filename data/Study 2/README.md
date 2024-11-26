@@ -1,6 +1,6 @@
 # Data README file
 
-**Dataset title:** Clean data from pilot study for project on "The Trustability 
+**Dataset title:** Clean data from Study 2 for project on "The Trustability 
 of AI"
 
 **Principal investigator:** Dr. Ethan Landes (ethan.landes@gmail.com)
