@@ -6,7 +6,7 @@ plot_study1_categories <- function(data, measure, category_means) {
     "Group_Agents"      = "Groups",
     "AI"                = "AI",
     "Animals"           = "Animals",
-    "Animate_Artifacts" = "Animate artifiacts",
+    "Animate_Artifacts" = "Animate artifacts",
     "Inanimate_Nature"  = "Inanimate nature",
     "Food"              = "Food",
     "Abstract"          = "Abstract"

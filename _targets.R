@@ -4,7 +4,8 @@ library(tarchetypes)
 library(tidyverse)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("bayestestR", "brms", "posterior", "tidyverse"))
+tar_option_set(packages = c("bayestestR", "brms", "patchwork", 
+                            "posterior", "tidyverse"))
 tar_source()
 
 # targets pipeline
@@ -12,7 +13,7 @@ list(
   
   #### Study 1 ####
   
-  # data file
+  # study 1 data file
   tar_target(study1_data_file, "data/study1/study1_data_clean.csv",
              format = "file"),
   # load study 1 data
@@ -54,5 +55,52 @@ list(
       study1_plot_diff,
       plot_study1_category_differences(study1_fit, measure, study1_category_bfs)
       )
+  ),
+  
+  #### Study 2 ####
+  
+  # study 2 data file
+  tar_target(study2_data_file, "data/study2/study2_data_clean.csv",
+             format = "file"),
+  # load study 2 data
+  tar_target(study2_data, read_csv(study2_data_file, show_col_types = FALSE)),
+  ## get priors for bayes factor calculations
+  tar_target(
+    study2_prior_fit,
+    fit_study2_model(study2_data, sample_prior = "only")
+    ),
+  # loop over two measures
+  tar_map(
+    values = tibble(measure = c("Felicity", "Sense")),
+    # fit model
+    tar_target(study2_fit, fit_study2_model(study2_data, measure)),
+    # extract category means
+    tar_target(
+      study2_category_means,
+      extract_study2_category_means(study2_fit)
+      ),
+    # extract item means
+    tar_target(study2_item_means, extract_study2_item_means(study2_fit)),
+    # extract category bayes factors
+    tar_target(
+      study2_category_bfs,
+      extract_study2_category_bayes_factors(study2_fit, study2_prior_fit)
+      ),
+    # plot categories
+    tar_target(
+      study2_plot_category,
+      plot_study2_categories(study2_data, measure, study2_category_means)
+      ),
+    # plot items
+    tar_target(
+      study2_plot_item,
+      plot_study2_items(study2_data, measure, study2_item_means)
+      ),
+    # plot category differences
+    tar_target(
+      study2_plot_diff,
+      plot_study2_category_differences(study2_fit, measure, study2_category_bfs)
+      )
   )
+  
 )

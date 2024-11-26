@@ -1,4 +1,4 @@
-# function for plotting items with model means
+# function for plotting items with model means in study 1
 plot_study1_items <- function(data, measure, item_means) {
   p <-
     # filter to specific measure
