@@ -39,8 +39,9 @@ plot_study2_items <- function(data, measure, item_means) {
         ),
         width = 0.2,
         height = 0.5,
-        size = 0.1,
-        colour = "lightgrey"
+        size = 0.04,
+        colour = "grey60",
+        alpha = 0.3
       ) +
       geom_pointrange(
         data = filter(item_means, Trust_Type == resp),

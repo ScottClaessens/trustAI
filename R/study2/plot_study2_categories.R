@@ -51,8 +51,9 @@ plot_study2_categories <- function(data, measure, category_means) {
         ),
         width = 0.3,
         height = 0.5,
-        size = 0.05,
-        colour = "lightgrey"
+        size = 0.01,
+        colour = "grey60",
+        alpha = 0.3
       ) +
       geom_pointrange(
         data = filter(category_means, Trust_Type == resp),
