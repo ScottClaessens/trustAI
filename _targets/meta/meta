@@ -1,0 +1,66 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|c3b69f99c5094255|||||||||||||||
+extract_study1_category_bayes_factors|function|ddfff67ce49011fc|||||||||||||||
+extract_study1_category_means|function|a82b4455bca1e2aa|||||||||||||||
+extract_study1_item_means|function|355c3ca3c0681f98|||||||||||||||
+extract_study2_category_bayes_factors|function|4bee9b65994db901|||||||||||||||
+extract_study2_category_means|function|d717e21d98c50ee4|||||||||||||||
+extract_study2_item_means|function|09c943fb6aa1e753|||||||||||||||
+extract_study3_item_means|function|9146449fa028de27|||||||||||||||
+fit_study1_model|function|27da6f4b2f4d4baa|||||||||||||||
+fit_study2_model|function|dda7e5727e123230|||||||||||||||
+fit_study3_model|function|de8d20a01e1a3319|||||||||||||||
+plot_study1_categories|function|45dd82122dfac8a5|||||||||||||||
+plot_study1_category_differences|function|6d5ec1d6fb0f1b67|||||||||||||||
+plot_study1_items|function|67ab9ff92271a7cb|||||||||||||||
+plot_study2_categories|function|5d8377b8932e9823|||||||||||||||
+plot_study2_category_differences|function|4720ee63caf9925d|||||||||||||||
+plot_study2_items|function|63d13c9c73819d89|||||||||||||||
+plot_study3_item_correlations|function|221b964755691aee|||||||||||||||
+plot_study3_item_scatterplot|function|cd7c672e99314c66|||||||||||||||
+plot_study3_items|function|be2ec871682a69de|||||||||||||||
+study1_category_bfs_Felicity|stem|575fec3399f3a1fb|1f263b08fbe8dddd|1383dce8d6cdf80b|-2128949845||t20059.484777179s|922598d76622d54c|287|rds|local|vector|||2.531||
+study1_category_bfs_Sense|stem|7a0d878fdab25ed1|fccd952192da88d8|2cd17b0de68c1bfc|-1473800587||t20059.4920446142s|d5bf79044af760da|286|rds|local|vector|||1.89||
+study1_category_means_Felicity|stem|b5296b3841bd7f2c|0ebf103047481a97|fe5caab4d62169fc|-180248729||t20059.491957292s|05a8c15af5ed1b7e|238598|rds|local|vector|||2.688||
+study1_category_means_Sense|stem|c63d4dae07488794|129d7ab248d18847|5282b6243c61a853|440179630||t20059.4920125516s|a8d085704d15ae5e|237270|rds|local|vector|||0.906||
+study1_data|stem|185af340359da508|ee01b90631ff09ba|c3878a0a2519b102|210452844||t20059.4777761582s|e01d21a1eef7c65c|6138|rds|local|vector|||0.328||
+study1_data_file|stem|3ec0b6ebdee92cf6|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20059.4584741164s|ac1e4ab0f2a654c1|167596|file|local|vector|||2.344|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study1_fit_Felicity|stem|47948cbd0c6f7481|be180fe5ad4f8f76|b62c0288432c2df1|-479870615||t20059.4847392301s|8eb75b5aa58437a6|10571596|rds|local|vector|||600.734||
+study1_fit_Sense|stem|bf56d1e5f1104747|ed4e7ab242303640|b62c0288432c2df1|-1886000670||t20059.4918352728s|aae773a634ee5671|10483339|rds|local|vector|||604.469||
+study1_item_means_Felicity|stem|18d37b287c4c3412|539a88d93c26e5de|0c7c4c34d27a4b42|1249386343||t20059.4919885039s|2c8d879f8a47a311|792599|rds|local|vector|||0.719||
+study1_item_means_Sense|stem|7c5fd775f80a057d|6e91e0b4d9660dce|d488a8afc6af1097|205465543||t20059.4918877435s|ede336714bd5a7c4|788924|rds|local|vector|||4.015||
+study1_plot_category_Felicity|stem|0d37ff85a9058551|ed38cc51cef53298|1df6264e818c3ecd|-684942807||t20059.491974006s|016a7add9a501e5e|1432866|rds|local|vector|||0.687||
+study1_plot_category_Sense|stem|8fceeca1645b67a3|19274efabf8c11f1|8aa3684620d25e99|-918963060||t20059.4920175254s|384dc05bb0c01f07|1426067|rds|local|vector|||0.203||
+study1_plot_diff_Felicity|stem|6c03d6be6999d79e|ee2c7aaf44e4f068|e39181ad5744df8c|-1479524818||t20059.4848051343s|e532928b09e7bcb0|12760777|rds|local|vector|||1.062|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_diff_Sense|stem|3ac7f21067ea6c52|fe08ae43f8b232a1|bbfe69511369efbb|1686439646||t20059.4920644683s|80f6da02d4bd0e02|12662987|rds|local|vector|||0.406|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_item_Felicity|stem|21f3349ff7b7729b|35bd0bc5fe0b7d9e|0a51131c2fc81f08|-207328773||t20059.4919992732s|da3ec17e0c05b3a0|4204170|rds|local|vector|||0.218||
+study1_plot_item_Sense|stem|98483dbd6981a68f|406d278c773ce3e0|7075b6a807c1a8b4|1657060598||t20059.4919138912s|87e21b392a622bc6|4184404|rds|local|vector|||0.797||
+study1_prior_fit|stem|0081d0c9ca31000d|49ff868a6b52ea59|b62c0288432c2df1|-1676393110||t20059.4795752527s|135c16a829019ea7|10653593|rds|local|vector|||58.812|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+study2_category_bfs_Felicity|stem|025d8a930806d91a|16a12c5e96879c65|62a8d2de1eeac188|740036187||t20059.5619421952s|26e03a9007ee0ad8|483|rds|local|vector|||8.907||
+study2_category_bfs_Sense|stem|3791a98480551862|8990bf697e66fe75|0822ccb20631aac3|1853176952||t20059.5167135795s|26e03a9007ee0ad8|483|rds|local|vector|||8.047||
+study2_category_means_Felicity|stem|2ca6b10246259000|5eba8215435663ad|eac7ff333f244145|-1761618158||t20059.5619036074s|57e4c40c4b63d2d7|802938|rds|local|vector|||1.266|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study2_category_means_Sense|stem|fc2abb948c3b077e|528683e5f30f8788|895a78e143d0f925|-837102513||t20059.5167226544s|357fdaaea2e88da0|800061|rds|local|vector|||1.594|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study2_data|stem|25d7a228d7f499b9|851abcd9b9e083cb|7a9b895bb012195b|-177392398||t20059.4777765199s|19f89ad59074ad21|21630|rds|local|vector|||0.344||
+study2_data_file|stem|ff32dd2d32367ecf|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20059.458474128s|d6281bbb7f0d2f3b|991779|file|local|vector|||2.359|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study2_fit_Felicity|stem|0d336a104e2ea8ec|7e20e24fb0be3888|3d5af2da76fa2ca7|2088504629||t20059.5618317873s|af0f8b12d9c1d907|29683924|rds|local|vector|||7261.109||
+study2_fit_Sense|stem|34f0ba9c6a9c2405|36eb282d4bcb4684|3d5af2da76fa2ca7|1236179676||t20059.516614709s|bb47c0f9beef6cba|30296722|rds|local|vector|||3198.906||
+study2_item_means_Felicity|stem|eeed3e6fd5c16dc4|3ddca1b0826a8de6|32d7c39947a1f05e|1289842985||t20059.5619105207s|7062ba5739d3f03a|2636840|rds|local|vector|||1.828|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study2_item_means_Sense|stem|62ba72dc27e2aed6|e33cc57f88cd0a81|c2528bc70f7c2f47|-56383760||t20059.516778284s|c5a3b1cb5be63f1e|2630850|rds|local|vector|||1.281||
+study2_plot_category_Felicity|stem|bb179fc01c67ec95|f256e15fd5c415da|83907f8ae10b7957|-1416072008||t20059.5619272624s|cacbb0243bb18468|4618143|rds|local|vector|||1.437||
+study2_plot_category_Sense|stem|cf4173378eae085f|8bb6dc426fe99196|61ea19e29d4769a6|-319495545||t20059.5167656104s|31e1cc4bc5df0b67|4606623|rds|local|vector|||1.313||
+study2_plot_diff_Felicity|stem|9b53cce879e9ae07|caefbe21b417b2dd|cdaa6a3e5aad6877|-1227623937||t20059.5619839572s|61dacb4b18cd372a|38304281|rds|local|vector|||1|Removed 8 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study2_plot_diff_Sense|stem|51750cb0ebb0bc3b|84c99a88167b89bd|613b3c428bcfe981|1091973055||t20059.5167587232s|ea985f84f8b7f3f6|38876209|rds|local|vector|||1.563|Removed 29 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 644 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 82 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study2_plot_item_Felicity|stem|8dccb981980be13b|06bc630e1d85f432|a90fefe6b2913614|-1480850177||t20059.561941783s|bd9f7014104df0c4|13797781|rds|local|vector|||1.578||
+study2_plot_item_Sense|stem|288179f930d476ce|72bfa2f88b52eb8c|d528ef6ee7c2e602|949256922||t20059.5168078587s|1f1e196e2a23694b|13765920|rds|local|vector|||1.265||
+study2_prior_fit|stem|141bb4550e1f0450|fa655daa63571d55|3d5af2da76fa2ca7|900917042||t20059.4788846803s|c438e62b1d336254|29846881|rds|local|vector|||89.437|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study3_data|stem|ba22f27b056f830c|de5d8dce63385f9a|b5aed5d486036266|1958037105||t20059.5627334251s|85df85c981f5e43c|19054|rds|local|vector|||0.312||
+study3_data_file|stem|608dd18f629f5bf4|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20059.4584741746s|bc7df0832396e363|855973|file|local|vector|||1.094|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study3_fit_Felicity|stem|27269e572df0cda3|9c1993ac7b7fa94f|3991c7b5d99b9a64|-1476242752||t20059.5788511635s|c82e788f84907522|26531483|rds|local|vector|||1390.094|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study3_fit_Sense|stem|401a3c18296ba6fa|291578528989f269|3991c7b5d99b9a64|-1635822795||t20059.578807491s|2a46675237703d20|26843168|rds|local|vector|||1384.657||
+study3_item_means_Felicity|stem|97d1164ea92caa61|bb5c946ae1e6f6ed|9d20241d0ef33c23|612702968||t20059.5788684363s|4203cd6aa761f84b|2635522|rds|local|vector|||0.875||
+study3_item_means_Sense|stem|44298834a4d81f77|21fb75f56907f235|7952700b095fc450|-1042106706||t20059.578824315s|2d478a32fa751d9c|2627852|rds|local|vector|||1.094||
+study3_plot_item_correlations|stem|e251a6a5a4043b94|92e31d64ab64a802|65f408204babc1b2|-1040588970||t20059.5789374973s|0b66c8175308995e|130435152|rds|local|vector|||0.531|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
+study3_plot_item_Felicity|stem|4583f3803e6d5bca|69310cb7fa034222|32b28161782e9832|1731217030||t20059.5789485608s|3bc002649317b8e2|13752937|rds|local|vector|||1.344||
+study3_plot_item_scatterplot_Felicity|stem|f69a0aa829dd21d7|63cb4ac55fa07787|a6aa50d2794d835c|1789999238||t20059.5789508179s|e8c12ae99ed55975|2849304|rds|local|vector|||1.641|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
+study3_plot_item_scatterplot_Sense|stem|e683e2b4cc16d74b|85e9f74e099f742e|598467dfbc5ac81e|-917835051||t20059.5788326895s|410853d89642172a|2841364|rds|local|vector|||0.469|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 3 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study3_plot_item_Sense|stem|0125db1d9a59d203|92e7a0767107c652|adb7ba0b87007f62|-1119318857||t20059.5788630745s|6dadf413d2b472ad|13710113|rds|local|vector|||1.313||
