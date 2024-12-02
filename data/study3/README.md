@@ -19,8 +19,8 @@ of AI"
 
 - `PID` - numeric, participant identification number
 - `Trait` - character, type of trait measured, either "Trust" 
-("I trust [Item]"), "Reliable" ("[Item] is reliable"), or 
-"Good Intentions" ("[Item] has good intentions").
+("I trust [Item]"), "Reliable" ("[Item] is reliable"), or "Good Intentions" 
+("[Item] has good intentions").
 - `Item` - character, 30 items inserted into the measure questions.
 - `Measure` - character, measure in which data was collected, either "Felicity" 
 or "Sense". Structure of Felicity questions are: "I trust [item]". Structure of 

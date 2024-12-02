@@ -7,7 +7,7 @@ library(tidyverse)
 # set options for targets and source R functions
 tar_option_set(
   packages = c("bayestestR", "brms", "patchwork", "posterior", "tidyverse"),
-  controller = crew_controller_local(workers = 3)
+  controller = crew_controller_local(workers = 2)
   )
 tar_source()
 
@@ -102,8 +102,40 @@ list(
     # plot category differences
     tar_target(
       study2_plot_diff,
-      plot_study2_category_differences(study2_fit, measure, study2_category_bfs)
+      plot_study2_category_differences(study2_fit, measure, 
+                                       study2_category_bfs)
       )
+  ),
+  
+  #### Study 3 ####
+  
+  # study 3 data file
+  tar_target(study3_data_file, "data/study3/study3_data_clean.csv",
+             format = "file"),
+  # load study 3 data
+  tar_target(study3_data, read_csv(study3_data_file, show_col_types = FALSE)),
+  # loop over two measures
+  tar_map(
+    values = tibble(measure = c("Felicity", "Sense")),
+    # fit model
+    tar_target(study3_fit, fit_study3_model(study3_data, measure)),
+    # extract item means
+    tar_target(study3_item_means, extract_study3_item_means(study3_fit)),
+    # plot items
+    tar_target(
+      study3_plot_item,
+      plot_study3_items(study3_data, measure, study3_item_means)
+    ),
+    # plot item scatterplot
+    tar_target(
+      study3_plot_item_scatterplot,
+      plot_study3_item_scatterplot(study3_item_means, measure)
+    )
+  ),
+  # plot item correlations
+  tar_target(
+    study3_plot_item_correlations,
+    plot_study3_item_correlations(study3_fit_Felicity, study3_fit_Sense)
   )
   
 )
