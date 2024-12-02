@@ -1,11 +1,14 @@
 options(tidyverse.quiet = TRUE)
+library(crew)
 library(targets)
 library(tarchetypes)
 library(tidyverse)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("bayestestR", "brms", "patchwork", 
-                            "posterior", "tidyverse"))
+tar_option_set(
+  packages = c("bayestestR", "brms", "patchwork", "posterior", "tidyverse"),
+  controller = crew_controller_local(workers = 3)
+  )
 tar_source()
 
 # targets pipeline
