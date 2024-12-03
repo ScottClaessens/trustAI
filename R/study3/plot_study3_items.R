@@ -35,8 +35,8 @@ plot_study3_items <- function(data, measure, item_means) {
       ),
       width = 0.2,
       height = 0.5,
-      size = 0.04,
-      alpha = 0.3
+      size = 0.03,
+      alpha = 0.05
     ) +
     geom_pointrange(
       data = mutate(
