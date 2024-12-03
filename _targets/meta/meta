@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|5b21863f5a2acd18|||||||||||||||
+.Random.seed|object|b5b5d93fd81a91d9|||||||||||||||
 extract_study1_category_bayes_factors|function|ddfff67ce49011fc|||||||||||||||
 extract_study1_category_means|function|a82b4455bca1e2aa|||||||||||||||
 extract_study1_item_means|function|355c3ca3c0681f98|||||||||||||||
@@ -18,7 +18,7 @@ plot_study2_category_differences|function|4720ee63caf9925d|||||||||||||||
 plot_study2_items|function|63d13c9c73819d89|||||||||||||||
 plot_study3_item_correlations|function|221b964755691aee|||||||||||||||
 plot_study3_item_scatterplot|function|3464368688a649ed|||||||||||||||
-plot_study3_items|function|78cbf39b29529417|||||||||||||||
+plot_study3_items|function|229d5fb21f7bd82c|||||||||||||||
 study1_category_bfs_Felicity|stem|575fec3399f3a1fb|1f263b08fbe8dddd|1383dce8d6cdf80b|-2128949845||t20059.484777179s|922598d76622d54c|287|rds|local|vector|||2.531||
 study1_category_bfs_Sense|stem|7a0d878fdab25ed1|fccd952192da88d8|2cd17b0de68c1bfc|-1473800587||t20059.4920446142s|d5bf79044af760da|286|rds|local|vector|||1.89||
 study1_category_means_Felicity|stem|b5296b3841bd7f2c|0ebf103047481a97|fe5caab4d62169fc|-180248729||t20059.491957292s|05a8c15af5ed1b7e|238598|rds|local|vector|||2.688||
@@ -60,7 +60,7 @@ study3_fit_Sense|stem|401a3c18296ba6fa|291578528989f269|3991c7b5d99b9a64|-163582
 study3_item_means_Felicity|stem|97d1164ea92caa61|bb5c946ae1e6f6ed|9d20241d0ef33c23|612702968||t20059.5788684363s|4203cd6aa761f84b|2635522|rds|local|vector|||0.875||
 study3_item_means_Sense|stem|44298834a4d81f77|21fb75f56907f235|7952700b095fc450|-1042106706||t20059.578824315s|2d478a32fa751d9c|2627852|rds|local|vector|||1.094||
 study3_plot_item_correlations|stem|e251a6a5a4043b94|92e31d64ab64a802|65f408204babc1b2|-1040588970||t20059.5789374973s|0b66c8175308995e|130435152|rds|local|vector|||0.531|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
-study3_plot_item_Felicity|stem|1e5e2e979b0a2390|69310cb7fa034222|0f121f83bd510c93|1731217030||t20060.6126684844s|322a3126f80a3acc|13471908|rds|local|vector|||2.422|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2. Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study3_plot_item_Felicity|stem|ffd748432952a50d|69310cb7fa034222|66f9e012af347026|1731217030||t20060.6282777701s|0e7bc011e10ca293|13471906|rds|local|vector|||2.579|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2. Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
 study3_plot_item_scatterplot_Felicity|stem|1a9d75f5215b009e|63cb4ac55fa07787|869b4e5849a022d5|1789999238||t20060.6126709677s|3eea59c40ac81eaf|2871111|rds|local|vector|||2.484|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2|
 study3_plot_item_scatterplot_Sense|stem|be1624f7962cd39d|85e9f74e099f742e|26fde93a05c772fc|-917835051||t20060.6126576173s|6e024c9f9107b3ea|2863528|rds|local|vector|||2.437|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2. ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 3 unlabeled data points too many overlaps. Consider increasing max.overlaps|
-study3_plot_item_Sense|stem|137ebdff1bc84c94|92e7a0767107c652|8d9ad83b157d1180|-1119318857||t20060.6126809732s|0791c4e035abb7b1|13432940|rds|local|vector|||0.375|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study3_plot_item_Sense|stem|edc35e04d53efb9d|92e7a0767107c652|3460272cf778f69e|-1119318857||t20060.6282865375s|3d17d1cf106f8748|13432943|rds|local|vector|||2.579|package bayestestR was built under R version 4.4.2. package brms was built under R version 4.4.2. package patchwork was built under R version 4.4.2. package posterior was built under R version 4.4.2. package tidyverse was built under R version 4.4.2. Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
