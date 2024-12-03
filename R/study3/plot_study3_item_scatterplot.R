@@ -8,7 +8,11 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
       names_from = Trait,
       values_from = Estimate
     ) %>%
-    mutate(Item = str_replace_all(Item, "_", " "))
+    mutate(
+      AI = Item %in% c("ChatGPT", "LLM", "Self_Driving_Car",
+                       "AI", "Amazon_Alexa", "Robot"),
+      Item = str_replace_all(Item, "_", " ")
+      )
   # plotting function
   plotFun <- function(var) {
     ggplot(
@@ -16,7 +20,8 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
       mapping = aes(
         x = !!sym(var),
         y = Trust,
-        label = Item
+        label = Item,
+        colour = AI
         )
       ) +
       geom_point() +
@@ -29,7 +34,9 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
         breaks = 1:7,
         limits = c(1, 7)
       ) +
-      theme_classic()
+      scale_colour_manual(values = c("grey60", "red")) +
+      theme_classic() +
+      theme(legend.position = "none")
   }
   # plots
   pA <- plotFun("Reliable")
