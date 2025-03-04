@@ -11,6 +11,11 @@ plot_study1_categories <- function(data, measure, category_means) {
     "Food"              = "Food",
     "Abstract"          = "Abstract"
   )
+  # order of x-axis
+  order <-
+    category_means %>%
+    arrange(desc(Estimate)) %>%
+    pull(Category)
   p <-
     # filter to specific measure
     data %>%
@@ -18,58 +23,68 @@ plot_study1_categories <- function(data, measure, category_means) {
     # plot
     ggplot() +
     geom_jitter(
-      data = data,
+      data = mutate(data, AI = Category == "AI"),
       mapping = aes(
-        x = fct_relevel(Category, unique(category_means$Category)),
-        y = Rating
+        x = factor(Category, levels = order),
+        y = Rating,
+        colour = AI
       ),
       width = 0.3,
       height = 0.5,
-      size = 0.1,
-      colour = "lightgrey"
+      size = 0.01
+    ) +
+    scale_colour_manual(values = c("#d9d9d9", "#ffd9d9")) +
+    ggnewscale::new_scale_colour() +
+    geom_linerange(
+      data = mutate(category_means, AI = Category == "AI"),
+      mapping = aes(
+        x = Category,
+        ymin = Q2.5,
+        ymax = Q97.5,
+        colour = AI
+      )
     ) +
     geom_pointrange(
-      data = category_means,
+      data = mutate(category_means, AI = Category == "AI"),
       mapping = aes(
         x = Category,
         y = Estimate,
-        ymin = Q2.5,
-        ymax = Q97.5
+        ymin = Q25,
+        ymax = Q75,
+        colour = AI
       ),
-      size = 0.1
+      size = 0.6,
+      linewidth = 1.3
     ) +
+    scale_colour_manual(values = c("black", "red")) +
     scale_y_continuous(
-      name = ifelse(
-        measure == "Felicity",
-        "Does 'I trust [item]' \nsound weird or natural?",
-        "If someone said 'I trust [item]',\nwould that sentence make sense?"
-      ),
+      name = NULL,
       breaks = 1:7,
       limits = c(1, 7),
       oob = scales::squish
     ) +
     scale_x_discrete(labels = function(x) labels[x]) +
+    ggtitle(
+      ifelse(
+        measure == "Felicity",
+        "Does 'I trust [item]'\nsound weird or natural?",
+        "If someone said 'I trust [item]',\nwould that sentence make sense?"
+        )
+      ) +
     theme_minimal() +
     theme(
       strip.placement = "outside",
       strip.text.x = element_text(size = 9),
       strip.text.y = element_text(size = 7),
-      legend.title = element_blank(),
+      legend.position = "none",
       axis.title.x = element_blank(),
       axis.title.y = element_text(size = 9),
-      axis.text.x = element_text(size = 7, angle = 45, hjust = 1),
-      axis.text.y = element_text(size = 6),
+      axis.text.x = element_text(size = 9, angle = 45, hjust = 1,
+                                 colour = ifelse(order == "AI", "red", "black")),
       panel.grid.minor = element_blank(),
       panel.grid.major = element_line(linewidth = 0.3),
       panel.spacing.x = unit(1.0, "lines"),
       panel.spacing.y = unit(0.7, "lines")
     )
-  # save plot
-  ggsave(
-    plot = p,
-    filename = paste0("plots/study1_categories_", measure, ".pdf"),
-    width = 5,
-    height = 4
-  )
   return(p)
 }

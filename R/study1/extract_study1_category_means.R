@@ -25,6 +25,8 @@ extract_study1_category_means <- function(fit) {
       Estimate = mean(post),
       Est.Error = sd(post),
       `Q2.5`  = quantile(post, 0.025),
+      `Q25`   = quantile(post, 0.25),
+      `Q75`   = quantile(post, 0.75),
       `Q97.5` = quantile(post, 0.975)
     ) %>%
     ungroup() %>%

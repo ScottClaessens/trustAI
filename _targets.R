@@ -6,7 +6,8 @@ library(tidyverse)
 
 # set options for targets and source R functions
 tar_option_set(
-  packages = c("bayestestR", "brms", "patchwork", "posterior", "tidyverse"),
+  packages = c("bayestestR", "brms", "ggnewscale",
+               "patchwork", "posterior", "tidyverse"),
   controller = crew_controller_local(workers = 3)
   )
 tar_source()
@@ -58,6 +59,12 @@ list(
       study1_plot_diff,
       plot_study1_category_differences(study1_fit, measure, study1_category_bfs)
       )
+  ),
+  # combined plots
+  tar_target(
+    study1_plot_category,
+    combine_plots_study1_categories(study1_plot_category_Felicity,
+                                    study1_plot_category_Sense)
   ),
   
   #### Study 2 ####
