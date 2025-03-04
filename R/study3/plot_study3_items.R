@@ -36,7 +36,7 @@ plot_study3_items <- function(data, measure, item_means) {
       width = 0.2,
       height = 0.5,
       size = 0.03,
-      alpha = 0.05
+      alpha = 0.15
     ) +
     geom_pointrange(
       data = mutate(
@@ -74,7 +74,7 @@ plot_study3_items <- function(data, measure, item_means) {
           )
         )
     ) +
-    scale_colour_manual(values = c("grey60", "red")) +
+    scale_colour_manual(values = c("grey40", "red")) +
     ggtitle(
       ifelse(
         measure == "Sense",

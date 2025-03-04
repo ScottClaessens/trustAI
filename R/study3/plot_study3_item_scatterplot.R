@@ -34,7 +34,7 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
         breaks = 1:7,
         limits = c(1, 7)
       ) +
-      scale_colour_manual(values = c("grey60", "red")) +
+      scale_colour_manual(values = c("grey40", "red")) +
       theme_classic() +
       theme(legend.position = "none")
   }
