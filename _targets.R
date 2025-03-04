@@ -8,7 +8,7 @@ library(tidyverse)
 tar_option_set(
   packages = c("bayestestR", "brms", "ggnewscale",
                "patchwork", "posterior", "tidyverse"),
-  controller = crew_controller_local(workers = 3)
+  controller = crew_controller_local(workers = 2)
   )
 tar_source()
 
@@ -31,7 +31,7 @@ list(
   tar_map(
     values = tibble(measure = c("Felicity", "Sense")),
     # fit model
-    tar_target(study1_fit, fit_study1_model(study1_data, measure)),
+    tar_target(study1_fit, fit_study1_model(study1_data %>% slice(1:200), measure)),
     # extract category means
     tar_target(
       study1_category_means,
@@ -66,6 +66,11 @@ list(
     combine_plots_study1_categories(study1_plot_category_Felicity,
                                     study1_plot_category_Sense)
   ),
+  #tar_target(
+  #  study1_plot_diff,
+  #  combine_plots_study1_category_differences(study1_plot_diff_Felicity,
+  #                                            study1_plot_diff_Sense)
+  #),
   
   #### Study 2 ####
   
