@@ -1,7 +1,6 @@
 # plot correlations between item means in study 3
 plot_study3_item_correlations <- function(study3_fit_Felicity,
-                                          study3_fit_Sense,
-                                          AI_only = FALSE) {
+                                          study3_fit_Sense) {
   # plotting function
   plotFun <- function(study3_fit) {
     # get posterior samples
@@ -51,10 +50,7 @@ plot_study3_item_correlations <- function(study3_fit_Felicity,
         limits = c(0, 1)
         ) +
       ggtitle(
-        paste0(
-          str_split(deparse(substitute(study3_fit)), "_")[[1]][3],
-          ifelse(AI_only, " - AI items only", "")
-          )
+        str_split(deparse(substitute(study3_fit)), "_")[[1]][3]
         ) +
       theme_minimal() +
       theme(
@@ -70,8 +66,7 @@ plot_study3_item_correlations <- function(study3_fit_Felicity,
   p <- (pA + pB) + plot_layout(guides = "collect")
   # save
   ggsave(
-    filename = paste0("plots/study3_item_correlations",
-                      ifelse(AI_only, "_AI", ""), ".pdf"),
+    filename = "plots/study3_item_correlations.pdf",
     plot = p,
     height = 3,
     width = 6.5

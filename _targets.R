@@ -117,14 +117,8 @@ list(
   # loop over two measures
   tar_map(
     values = tibble(measure = c("Felicity", "Sense")),
-    # fit models
+    # fit model
     tar_target(study3_fit, fit_study3_model(study3_data, measure)),
-    tar_target(
-      study3_fit_AI,
-      fit_study3_model(
-        filter(study3_data, Category == "AI"),
-        measure)
-      ),
     # extract item means
     tar_target(study3_item_means, extract_study3_item_means(study3_fit)),
     # plot items
@@ -142,11 +136,6 @@ list(
   tar_target(
     study3_plot_item_correlations,
     plot_study3_item_correlations(study3_fit_Felicity, study3_fit_Sense)
-  ),
-  # plot item correlations - AI items only
-  tar_target(
-    study3_plot_item_correlations_AI,
-    plot_study3_item_correlations(study3_fit_AI_Felicity, study3_fit_AI_Sense)
   )
   
 )
