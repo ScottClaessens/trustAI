@@ -66,11 +66,6 @@ list(
     combine_plots_study1_categories(study1_plot_category_Felicity,
                                     study1_plot_category_Sense)
   ),
-  #tar_target(
-  #  study1_plot_diff,
-  #  combine_plots_study1_category_differences(study1_plot_diff_Felicity,
-  #                                            study1_plot_diff_Sense)
-  #),
   
   #### Study 2 ####
   

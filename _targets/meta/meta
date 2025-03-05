@@ -32,8 +32,6 @@ study1_plot_category_Felicity|stem|c88d072a8aedc482|ed38cc51cef53298|2d864a48140
 study1_plot_item_Felicity|stem|80598d37d77885ba|35bd0bc5fe0b7d9e|27b5f580a860a6a7|-207328773||t20151.8338677719s|s4206571b|4206571|rds|local|vector|||0.219||
 study1_plot_item_Sense|stem|91a50a9f4ca77c83|406d278c773ce3e0|7b62d93ad2b2fab8|1657060598||t20151.8338748138s|s4186624b|4186624|rds|local|vector|||0.187||
 study1_plot_category_Sense|stem|9c915caa50b969e3|19274efabf8c11f1|3b31f156cbd8fca5|-918963060||t20151.8338784791s|s2423446b|2423446|rds|local|vector|||0.031|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study1_plot_diff_Sense|stem|694e3b3e57aa0718|fe08ae43f8b232a1|2de8dd232db9f637|1686439646||t20151.833897259s|s12667454b|12667454|rds|local|vector|||0.672||
-study1_plot_diff_Felicity|stem|0a7f74aa20af1127|ee2c7aaf44e4f068|183d79d1a3848fbb|-1479524818||t20151.8339092181s|s12740899b|12740899|rds|local|vector|||0.047||
 study3_plot_item_Felicity|stem|3f18b98bb77ae9e9|69310cb7fa034222|75fb9b535261b542|1731217030||t20151.8339264244s|s13469927b|13469927|rds|local|vector|||0.438|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
 study3_plot_item_scatterplot_Felicity|stem|d29d8736a6ab2269|63cb4ac55fa07787|513728e3bd721921|1789999238||t20151.8339380225s|s2870842b|2870842|rds|local|vector|||0.734||
 study3_plot_item_scatterplot_Sense|stem|2197c966cc8764e0|85e9f74e099f742e|abc9e4f9a9ab2c3e|-917835051||t20151.8339470416s|s2863957b|2863957|rds|local|vector|||0.484|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 3 unlabeled data points too many overlaps. Consider increasing max.overlaps|
@@ -45,6 +43,8 @@ study2_plot_item_Felicity|stem|fc345681d2447a37|06bc630e1d85f432|174d816b128281b
 study2_plot_category_Felicity|stem|c0d77da2c55362aa|f256e15fd5c415da|59850f63d376bdd7|-1416072008||t20151.8341149334s|s4617741b|4617741|rds|local|vector|||1.563||
 study2_plot_diff_Felicity|stem|9a2fc54c9e29b4e8|caefbe21b417b2dd|40903984b3d4049c|-1227623937||t20151.8341562632s|s38529126b|38529126|rds|local|vector|||1.156|Removed 2 rows containing missing values or values outside the scale rangestat_slabinterval.|
 study1_plot_category|stem|87949663a53432ed|c706e9c1de221d1a|90d7d0f6277cef3a|-50214846||t20151.8341681624s|s4693468b|4693468|rds|local|vector|||0.453||
+study1_plot_diff_Sense|stem|9c20dbbc5fcf5f5f|fe08ae43f8b232a1|10c6f24e2091924a|1686439646||t20152.4992421137s|s12658782b|12658782|rds|local|vector|||0.672|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_diff_Felicity|stem|8c4d4aba4d0b4b8d|ee2c7aaf44e4f068|47cd1800982baa38|-1479524818||t20152.4992563068s|s12735072b|12735072|rds|local|vector|||0.281|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
 extract_study1_category_bayes_factors|function|ddfff67ce49011fc
 plot_study1_categories|function|55026f252add471f
 fit_study2_model|function|dda7e5727e123230
@@ -55,15 +55,14 @@ plot_study2_category_differences|function|4720ee63caf9925d
 plot_study3_items|function|0fd936b45eac012b
 plot_study2_items|function|63d13c9c73819d89
 extract_study2_category_bayes_factors|function|4bee9b65994db901
-.Random.seed|object|8720987fc152e8df
+.Random.seed|object|228b6cc9a2a9c140
 fit_study1_model|function|27da6f4b2f4d4baa
 plot_study2_categories|function|5d8377b8932e9823
-plot_study1_category_differences|function|2391fe5480a04d74
+plot_study1_category_differences|function|3ed2e557587eefd3
 fit_study3_model|function|de8d20a01e1a3319
 plot_study3_item_correlations|function|221b964755691aee
 plot_study1_items|function|67ab9ff92271a7cb
 extract_study2_category_means|function|d717e21d98c50ee4
 extract_study3_item_means|function|9146449fa028de27
-combine_plots_study1_category_differences|function|8e0ffbda7a5e3010
 extract_study1_category_means|function|1890e25363722fab
 extract_study1_item_means|function|73bb090f0709e8c9

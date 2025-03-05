@@ -73,5 +73,12 @@ plot_study1_category_differences <- function(fit, measure, category_bfs) {
     scale_y_discrete(labels = function(y) labels[y]) +
     theme_classic() +
     theme(axis.title.y = element_blank())
+  # save plot
+  ggsave(
+    plot = p,
+    filename = paste0("plots/study1_category_difference_", measure, ".pdf"),
+    width = 5,
+    height = 4
+  )
   return(p)
 }
