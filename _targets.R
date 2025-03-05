@@ -7,8 +7,8 @@ library(tidyverse)
 # set options for targets and source R functions
 tar_option_set(
   packages = c("bayestestR", "brms", "ggnewscale",
-               "patchwork", "posterior", "tidyverse"),
-  controller = crew_controller_local(workers = 2)
+               "patchwork", "posterior", "tidyverse")#,
+  #controller = crew_controller_local(workers = 2)
   )
 tar_source()
 
@@ -31,7 +31,7 @@ list(
   tar_map(
     values = tibble(measure = c("Felicity", "Sense")),
     # fit model
-    tar_target(study1_fit, fit_study1_model(study1_data %>% slice(1:200), measure)),
+    tar_target(study1_fit, fit_study1_model(study1_data, measure)),
     # extract category means
     tar_target(
       study1_category_means,
