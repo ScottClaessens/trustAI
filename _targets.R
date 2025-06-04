@@ -7,7 +7,7 @@ library(tidyverse)
 # set options for targets and source R functions
 tar_option_set(
   packages = c("bayestestR", "brms", "ggnewscale",
-               "patchwork", "posterior", "tidyverse")#,
+               "patchwork", "posterior", "tidybayes", "tidyverse")#,
   #controller = crew_controller_local(workers = 2)
   )
 tar_source()
@@ -160,6 +160,11 @@ list(
     plot_study4_model_predictions(study4_fit)
     ),
   # plot histograms
-  tar_target(study4_plot_histograms, plot_study4_histograms(study4_data))
+  tar_target(study4_plot_histograms, plot_study4_histograms(study4_data)),
+  # plot slopes by item
+  tar_target(
+    study4_plot_slopes_by_item,
+    plot_study4_slopes_by_item(study4_fit)
+    )
   
 )
