@@ -143,6 +143,21 @@ list(
   tar_target(
     study3_plot_item_correlations,
     plot_study3_item_correlations(study3_fit_Felicity, study3_fit_Sense)
-  )
+  ),
+  
+  #### Study 4 ####
+  
+  # study 4 data file
+  tar_target(study4_data_file, "data/study4/study4_clean_data.csv",
+             format = "file"),
+  # load study 4 data
+  tar_target(study4_data, load_study4_data(study4_data_file)),
+  # fit model
+  tar_target(study4_fit, fit_study4_model(study4_data)),
+  # plot model predictions
+  tar_target(
+    study4_plot_model_predictions,
+    plot_study4_model_predictions(study4_fit)
+    )
   
 )
