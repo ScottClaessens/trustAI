@@ -158,6 +158,8 @@ list(
   tar_target(
     study4_plot_model_predictions,
     plot_study4_model_predictions(study4_fit)
-    )
+    ),
+  # plot histograms
+  tar_target(study4_plot_histograms, plot_study4_histograms(study4_data))
   
 )
