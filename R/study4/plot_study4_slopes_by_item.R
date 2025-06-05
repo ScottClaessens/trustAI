@@ -1,7 +1,7 @@
 # function to plot model slopes by AI item in study 4
-plot_study4_slopes_by_item <- function(study4_fit) {
+plot_study4_slopes_by_item <- function(study4_fit1) {
   out <-
-    study4_fit %>%
+    study4_fit1 %>%
     # extract parameters
     spread_draws(
       bsp_moreliable, bsp_mogood_intentions, r_Item[item, parameter]

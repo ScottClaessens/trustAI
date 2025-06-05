@@ -1,5 +1,5 @@
-# function to fit model in study 4
-fit_study4_model <- function(study4_data) {
+# function to fit model 1 in study 4
+fit_study4_model1 <- function(study4_data) {
   # get data in wide format for modelling
   study4_data <- 
     study4_data %>%

@@ -1,10 +1,10 @@
 # function to plot model predictions in study 4
-plot_study4_model_predictions <- function(study4_fit) {
+plot_study4_model_predictions <- function(study4_fit1) {
   # internal plotting function
   plot_fun <- function(index, resp) {
     plot(
       conditional_effects(
-        x = study4_fit,
+        x = study4_fit1,
         # hold other variable at scale midpoint
         conditions = if (resp == "reliable") {
           data.frame(good_intentions = 4)

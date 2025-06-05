@@ -152,19 +152,34 @@ list(
              format = "file"),
   # load study 4 data
   tar_target(study4_data, load_study4_data(study4_data_file)),
-  # fit model
-  tar_target(study4_fit, fit_study4_model(study4_data)),
+  # fit models
+  tar_target(study4_fit1, fit_study4_model1(study4_data)),
+  tar_target(study4_fit2, fit_study4_model2(study4_data)),
   # plot model predictions
   tar_target(
     study4_plot_model_predictions,
-    plot_study4_model_predictions(study4_fit)
+    plot_study4_model_predictions(study4_fit1)
     ),
   # plot histograms
   tar_target(study4_plot_histograms, plot_study4_histograms(study4_data)),
   # plot slopes by item
   tar_target(
     study4_plot_slopes_by_item,
-    plot_study4_slopes_by_item(study4_fit)
-    )
+    plot_study4_slopes_by_item(study4_fit1)
+    ),
+  # extract item means
+  tar_target(study4_item_means, extract_study4_item_means(study4_fit2)),
+  # plot item scatter plots
+  tar_target(
+    study4_plot_item_scatterplot,
+    plot_study4_item_scatterplot(study4_item_means)
+  ),
+  # extract participant means
+  tar_target(study4_pid_means, extract_study4_pid_means(study4_fit2)),
+  # plot participant scatter plots
+  tar_target(
+    study4_plot_pid_scatterplot,
+    plot_study4_pid_scatterplot(study4_pid_means)
+  )
   
 )
