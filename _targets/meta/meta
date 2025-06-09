@@ -57,11 +57,17 @@ study4_fit2|stem|32d20ae8ec0dcf17|5428200174a8bfe0|b2dbdabea6cf4c63|705631039||t
 study4_item_means|stem|33bc3263e7d67c87|e831dbf7bcc814c7|5ea9185291ea66e1|-1164308669||t20244.7258515498s|s1653321b|1653321|rds|local|vector|||1.203||
 study4_plot_item_scatterplot|stem|75168f0d482f9865|9a3f14fa89b17046|57f1dbc550470000|-1843201186||t20244.7439121186s|s1869949b|1869949|rds|local|vector|||1.562|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps|
 study4_pid_means|stem|e612dc4953a6855d|a0ea04be15cef903|6c9161ae5a07f6df|2043831728||t20244.7488241247s|s27986169b|27986169|rds|local|vector|||4.532||
+study4_plot_pid_scatterplot|stem|a9b294fedac0c100|8c1beefa251ae531|0143fd8fdc6e17ef|-1021283822||t20244.7536888586s|s28219065b|28219065|rds|local|vector|||1.344||
+study4_kmeans|stem|e9dd2acb836012df|c07cf125f40c664c|3243f6d84ff9dd28|-542262995||t20248.7407579396s|s5700b|5700|rds|local|vector|||0.046||
+study4_plot_scree|stem|0c9160bc28a952c8|ba107c5d33d43aa2|5301e1b4e13865d6|163919870||t20248.7407643578s|s189941b|189941|rds|local|vector|||0.453||
+study4_plot_clusters|stem|c334a0179c8ab6b1|56e6b9590234f921|ef0bc9b1c954baed|-1714529155||t20248.7532013638s|s255515b|255515|rds|local|vector|||0.687|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
 plot_study4_slopes_by_item|function|07271e9ca195e437
 extract_study2_category_means|function|d717e21d98c50ee4
+plot_study4_scree|function|2407af08999a3111
 plot_study2_categories|function|5d8377b8932e9823
 plot_study3_items|function|0fd936b45eac012b
-.Random.seed|object|f032b11b3fa1d029
+plot_study4_clusters|function|c8ab87116bdf183e
+.Random.seed|object|a04d96ae18437c72
 extract_study2_item_means|function|09c943fb6aa1e753
 plot_study1_categories|function|55026f252add471f
 fit_study3_model|function|de8d20a01e1a3319
@@ -78,14 +84,14 @@ extract_study1_item_means|function|73bb090f0709e8c9
 plot_study4_histograms|function|760aa230f0d74f53
 combine_plots_study1_categories|function|e9b0bdb5ee9de316
 load_study4_data|function|a53a53b73a39e626
-plot_study1_items|function|67ab9ff92271a7cb
 fit_study1_model|function|27da6f4b2f4d4baa
-plot_study2_items|function|63d13c9c73819d89
+fit_study4_kmeans|function|042b6f52aa619d55
+plot_study1_items|function|67ab9ff92271a7cb
 fit_study2_model|function|dda7e5727e123230
+plot_study2_items|function|63d13c9c73819d89
 plot_study4_model_predictions|function|4c51eb721ec2acd8
 plot_study4_pid_scatterplot|function|6e4cd31faa4642d3
 plot_study3_item_scatterplot|function|8e9dd0ac0c304d00
 extract_study4_pid_means|function|bf54341e265ea906
 extract_study2_category_bayes_factors|function|4bee9b65994db901
 plot_study2_category_differences|function|4720ee63caf9925d
-study4_plot_pid_scatterplot|stem|a9b294fedac0c100|8c1beefa251ae531|0143fd8fdc6e17ef|-1021283822||t20244.7536888586s|s28219065b|28219065|rds|local|vector|||1.344||

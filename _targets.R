@@ -180,6 +180,15 @@ list(
   tar_target(
     study4_plot_pid_scatterplot,
     plot_study4_pid_scatterplot(study4_pid_means)
-  )
+  ),
+  # fit kmeans models with differing numbers of clusters
+  tar_target(study4_kmeans, fit_study4_kmeans(study4_data)),
+  # plot scree plot
+  tar_target(study4_plot_scree, plot_study4_scree(study4_kmeans)),
+  # plot clusters
+  tar_target(
+    study4_plot_clusters,
+    plot_study4_clusters(study4_data, study4_kmeans)
+    )
   
 )
