@@ -1,73 +1,46 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-study1_data_file|stem|6b143a9113d37ee0|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20013.487037037s|s162357b|162357|file|local|vector|||3.234||
-study3_data_file|stem|608dd18f629f5bf4|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20059.4414749762s|s855973b|855973|file|local|vector|||1.406||
-study3_data|stem|28f3ba0ad0a886f5|de5d8dce63385f9a|b5aed5d486036266|1958037105||t20151.7134504554s|s19054b|19054|rds|local|vector|||0.406||
-study1_data|stem|4d3506f02e5428d3|ee01b90631ff09ba|27105f81c7306483|210452844||t20151.7134511907s|s6139b|6139|rds|local|vector|||2.172||
-study2_data_file|stem|ff32dd2d32367ecf|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20053.5305931737s|s991779b|991779|file|local|vector|||0.813||
-study2_data|stem|1382542ebf27f677|851abcd9b9e083cb|7a9b895bb012195b|-177392398||t20151.720818476s|s21630b|21630|rds|local|vector|||0.125||
-study1_fit_Felicity|stem|2d616d5560936c5f|be180fe5ad4f8f76|c454398b581db4b8|-479870615||t20151.7263774254s|s10548304b|10548304|rds|local|vector|||373.735||
-study1_fit_Sense|stem|f27b9e52c970ded4|ed4e7ab242303640|c454398b581db4b8|-1886000670||t20151.7304486577s|s10479632b|10479632|rds|local|vector|||351.188||
-study1_prior_fit|stem|797980338120f500|49ff868a6b52ea59|c454398b581db4b8|-1676393110||t20151.7313544224s|s10678671b|10678671|rds|local|vector|||77.672|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
-study3_fit_Felicity|stem|fec1c0eda8f5c9ee|9c1993ac7b7fa94f|ceceb1fa131414d9|-1476242752||t20151.7424910548s|s26601354b|26601354|rds|local|vector|||961.094||
-study3_fit_Sense|stem|06e93cf4e269fe85|291578528989f269|ceceb1fa131414d9|-1635822795||t20151.7551403013s|s26914881b|26914881|rds|local|vector|||1091.797||
-study2_fit_Sense|stem|77fb526fa7b08b6d|36eb282d4bcb4684|63a2b18636d72866|1236179676||t20151.778607314s|s30353964b|30353964|rds|local|vector|||2026.437||
-study2_prior_fit|stem|e3274b5a262bc948|fa655daa63571d55|63a2b18636d72866|900917042||t20151.7811517563s|s30002912b|30002912|rds|local|vector|||218.64||
-study2_fit_Felicity|stem|d0dcd2560a952823|7e20e24fb0be3888|63a2b18636d72866|2088504629||t20151.8055624162s|s29913290b|29913290|rds|local|vector|||2107.922|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
-study1_category_means_Felicity|stem|d531f316ba0b4895|0ebf103047481a97|58aa0b639093c022|-180248729||t20151.8055672889s|s238752b|238752|rds|local|vector|||0.375||
-study1_item_means_Felicity|stem|3751e046472f6d65|539a88d93c26e5de|6c61b38bf44a92b6|1249386343||t20151.8055726192s|s793064b|793064|rds|local|vector|||0.406||
-study1_item_means_Sense|stem|1cbac068fdae2648|6e91e0b4d9660dce|d69afb93e59bc4d3|205465543||t20151.8055782263s|s789402b|789402|rds|local|vector|||0.407||
-study1_category_means_Sense|stem|21dc71e5170468b5|129d7ab248d18847|f7988afa51d1b815|440179630||t20151.8055823299s|s237427b|237427|rds|local|vector|||0.312||
-study1_category_bfs_Sense|stem|082cc37ce6e6fff9|fccd952192da88d8|f2b2eb43639a9cab|-1473800587||t20151.833351318s|s286b|286|rds|local|vector|||2.765||
-study1_category_bfs_Felicity|stem|bfe957ce599b45dd|1f263b08fbe8dddd|3c8058bc0358615f|-2128949845||t20151.8333818852s|s287b|287|rds|local|vector|||2.391||
-study3_item_means_Felicity|stem|70f41182c0d13699|bb5c946ae1e6f6ed|ff9ca675ec1addea|612702968||t20151.8334023272s|s2635349b|2635349|rds|local|vector|||1.25||
-study3_item_means_Sense|stem|6d97a4398114829f|21fb75f56907f235|3c1b05fe9207069a|-1042106706||t20151.8334216973s|s2628351b|2628351|rds|local|vector|||1.078||
-study3_plot_item_correlations|stem|16f230c0c9d99bae|92e31d64ab64a802|fcdf3ddba7acd933|-1040588970||t20151.8335257767s|s130525288b|130525288|rds|local|vector|||2.5|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
-study2_category_means_Sense|stem|085b99bad27f7aa4|528683e5f30f8788|c975daaa8c187c1c|-837102513||t20151.8335420729s|s799691b|799691|rds|local|vector|||0.75||
-study2_item_means_Sense|stem|e892931e8628beb9|e33cc57f88cd0a81|ed0113b36addb3e8|-56383760||t20151.833558294s|s2630120b|2630120|rds|local|vector|||1.203||
-study2_category_bfs_Sense|stem|43293fee7198ed2e|8990bf697e66fe75|6aa10d7833cbc14d|1853176952||t20151.8337024422s|s483b|483|rds|local|vector|||11.718||
-study2_item_means_Felicity|stem|f2be72a346a0de9a|3ddca1b0826a8de6|4b7588e44c9b1f2c|1289842985||t20151.8337209819s|s2636535b|2636535|rds|local|vector|||1.015||
-study2_category_means_Felicity|stem|490fd0e93fa76e75|5eba8215435663ad|a1c80f2d262cb8a1|-1761618158||t20151.8337344307s|s802935b|802935|rds|local|vector|||1.094||
-study2_category_bfs_Felicity|stem|2ca826885ec6e419|16a12c5e96879c65|27e3bb2b7c94d74c|740036187||t20151.8338542491s|s484b|484|rds|local|vector|||10.328||
-study1_plot_category_Felicity|stem|c88d072a8aedc482|ed38cc51cef53298|2d864a4814065cb9|-684942807||t20151.8338594931s|s2435585b|2435585|rds|local|vector|||0.141|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study1_plot_item_Felicity|stem|80598d37d77885ba|35bd0bc5fe0b7d9e|27b5f580a860a6a7|-207328773||t20151.8338677719s|s4206571b|4206571|rds|local|vector|||0.219||
-study1_plot_item_Sense|stem|91a50a9f4ca77c83|406d278c773ce3e0|7b62d93ad2b2fab8|1657060598||t20151.8338748138s|s4186624b|4186624|rds|local|vector|||0.187||
-study1_plot_category_Sense|stem|9c915caa50b969e3|19274efabf8c11f1|3b31f156cbd8fca5|-918963060||t20151.8338784791s|s2423446b|2423446|rds|local|vector|||0.031|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study3_plot_item_Felicity|stem|3f18b98bb77ae9e9|69310cb7fa034222|75fb9b535261b542|1731217030||t20151.8339264244s|s13469927b|13469927|rds|local|vector|||0.438|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study3_plot_item_scatterplot_Felicity|stem|d29d8736a6ab2269|63cb4ac55fa07787|513728e3bd721921|1789999238||t20151.8339380225s|s2870842b|2870842|rds|local|vector|||0.734||
-study3_plot_item_scatterplot_Sense|stem|2197c966cc8764e0|85e9f74e099f742e|abc9e4f9a9ab2c3e|-917835051||t20151.8339470416s|s2863957b|2863957|rds|local|vector|||0.484|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 3 unlabeled data points too many overlaps. Consider increasing max.overlaps|
-study3_plot_item_Sense|stem|38060ded258a6477|92e7a0767107c652|2d534325635bfee7|-1119318857||t20151.8339626809s|s13437098b|13437098|rds|local|vector|||0.407|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study2_plot_category_Sense|stem|890618f685c1dd6f|8bb6dc426fe99196|eb1e6e851fef964f|-319495545||t20151.8339865904s|s4602066b|4602066|rds|local|vector|||1.437||
-study2_plot_item_Sense|stem|2eebeaef9dfa05e8|72bfa2f88b52eb8c|268c056f3fc5eeaa|949256922||t20151.8340182406s|s13769058b|13769058|rds|local|vector|||1.485||
-study2_plot_diff_Sense|stem|1be7f0f5e2e560d8|84c99a88167b89bd|959235dfcd7b24ac|1091973055||t20151.8340583783s|s38937625b|38937625|rds|local|vector|||1.203|Removed 22 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 704 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 68 rows containing missing values or values outside the scale rangestat_slabinterval.|
-study2_plot_item_Felicity|stem|fc345681d2447a37|06bc630e1d85f432|174d816b128281b9|-1480850177||t20151.8340899364s|s13793065b|13793065|rds|local|vector|||1.562||
-study2_plot_category_Felicity|stem|c0d77da2c55362aa|f256e15fd5c415da|59850f63d376bdd7|-1416072008||t20151.8341149334s|s4617741b|4617741|rds|local|vector|||1.563||
-study2_plot_diff_Felicity|stem|9a2fc54c9e29b4e8|caefbe21b417b2dd|40903984b3d4049c|-1227623937||t20151.8341562632s|s38529126b|38529126|rds|local|vector|||1.156|Removed 2 rows containing missing values or values outside the scale rangestat_slabinterval.|
-study1_plot_category|stem|87949663a53432ed|c706e9c1de221d1a|90d7d0f6277cef3a|-50214846||t20151.8341681624s|s4693468b|4693468|rds|local|vector|||0.453||
-study1_plot_diff_Sense|stem|9c20dbbc5fcf5f5f|fe08ae43f8b232a1|10c6f24e2091924a|1686439646||t20152.4992421137s|s12658782b|12658782|rds|local|vector|||0.672|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
-study1_plot_diff_Felicity|stem|8c4d4aba4d0b4b8d|ee2c7aaf44e4f068|47cd1800982baa38|-1479524818||t20152.4992563068s|s12735072b|12735072|rds|local|vector|||0.281|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
-study4_data_file|stem|8614c42faa0c8f9c|e2f4bad42ae67d46|2c530c1562a7fbd1|1373453753|data/study4/study4_clean_data.csv|t20243.6362709483s|s296306b|296306|file|local|vector|||2.344||
-study4_data|stem|2e5a6247ef58e707|4f89c999933c460c|5474b88771df6809|-1693340579||t20243.6417345088s|s15794b|15794|rds|local|vector|||0.093||
-study4_plot_histograms|stem|ce8942919bbfc10f|2a52f0656b7a3173|2aad4bcb818fb828|1851166229||t20243.6971713716s|s286682b|286682|rds|local|vector|||1.531||
 fit_study4_model|function|550cbbe5f59b928b|||||||||||||||
 study4_fit|stem|1675cd0c90e9e813|371f311d9dada464|44ad554540adfe12|748931001||t20244.6852414121s|s64935093b|64935093|rds|local|vector|||693.438|Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
-study4_fit1|stem|836998ee435505f0|57d601f09decf9d4|9596f41f809ba83c|-790054642||t20244.7096147123s|s26240297b|26240297|rds|local|vector|||516.015||
-study4_plot_model_predictions|stem|17d97d1b391b299a|ffdaf3dfe9987e66|f2ae79eb90e18321|-1829142559||t20244.7096621763s|s26629668b|26629668|rds|local|vector|||3.062|Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Removed 792 rows containing missing values or values outside the scale rangegeom_point.. Removed 748 rows containing missing values or values outside the scale rangegeom_point.|
-study4_plot_slopes_by_item|stem|ca330aa88549f808|3951dcc746ccc965|b233e5c3739ef649|299059724||t20244.7097060171s|s37758479b|37758479|rds|local|vector|||2.109||
-study4_fit2|stem|32d20ae8ec0dcf17|5428200174a8bfe0|b2dbdabea6cf4c63|705631039||t20244.7182784819s|s65823438b|65823438|rds|local|vector|||665.5||
-study4_item_means|stem|33bc3263e7d67c87|e831dbf7bcc814c7|5ea9185291ea66e1|-1164308669||t20244.7258515498s|s1653321b|1653321|rds|local|vector|||1.203||
-study4_plot_item_scatterplot|stem|75168f0d482f9865|9a3f14fa89b17046|57f1dbc550470000|-1843201186||t20244.7439121186s|s1869949b|1869949|rds|local|vector|||1.562|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps|
-study4_pid_means|stem|e612dc4953a6855d|a0ea04be15cef903|6c9161ae5a07f6df|2043831728||t20244.7488241247s|s27986169b|27986169|rds|local|vector|||4.532||
-study4_plot_pid_scatterplot|stem|a9b294fedac0c100|8c1beefa251ae531|0143fd8fdc6e17ef|-1021283822||t20244.7536888586s|s28219065b|28219065|rds|local|vector|||1.344||
-study4_kmeans|stem|e9dd2acb836012df|c07cf125f40c664c|3243f6d84ff9dd28|-542262995||t20248.7407579396s|s5700b|5700|rds|local|vector|||0.046||
-study4_plot_scree|stem|0c9160bc28a952c8|ba107c5d33d43aa2|5301e1b4e13865d6|163919870||t20248.7407643578s|s189941b|189941|rds|local|vector|||0.453||
-study4_plot_clusters|stem|c334a0179c8ab6b1|56e6b9590234f921|ef0bc9b1c954baed|-1714529155||t20248.7532013638s|s255515b|255515|rds|local|vector|||0.687|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
+study4_data_file|stem|8614c42faa0c8f9c|e2f4bad42ae67d46|2c530c1562a7fbd1|1373453753|data/study4/study4_clean_data.csv|t20250.3020710974s|s296306b|296306|file|local|vector|||2.344||
+study3_data_file|stem|608dd18f629f5bf4|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20250.3020710741s|s855973b|855973|file|local|vector|||1.406||
+study2_data_file|stem|ff32dd2d32367ecf|e45f33fd84dcd429|2c530c1562a7fbd1|-1996020836|data/study2/study2_data_clean.csv|t20250.3020710274s|s991779b|991779|file|local|vector|||0.813||
+study4_data|stem|2e5a6247ef58e707|4f89c999933c460c|5474b88771df6809|-1693340579||t20261.7580929903s|s15794b|15794|rds|local|vector|||1.859||
+study3_data|stem|28f3ba0ad0a886f5|de5d8dce63385f9a|b5aed5d486036266|1958037105||t20261.7580943944s|s19054b|19054|rds|local|vector|||1.5||
+study1_data_file|stem|3ec0b6ebdee92cf6|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20250.3020709836s|s167596b|167596|file|local|vector|||0.875||
+study2_data|stem|1382542ebf27f677|851abcd9b9e083cb|7a9b895bb012195b|-177392398||t20261.758683314s|s21630b|21630|rds|local|vector|||0.094||
+study1_data|stem|4d3506f02e5428d3|ee01b90631ff09ba|c3878a0a2519b102|210452844||t20261.758683881s|s6139b|6139|rds|local|vector|||0.015||
+study4_fit1|stem|5d5df443fd5aa209|57d601f09decf9d4|9596f41f809ba83c|-790054642||t20261.7637405331s|s26244618b|26244618|rds|local|vector|||435.906||
+study4_kmeans|stem|e9dd2acb836012df|c07cf125f40c664c|3243f6d84ff9dd28|-542262995||t20261.7637415555s|s5700b|5700|rds|local|vector|||0.047||
+study4_plot_histograms|stem|abf71fa01e3b2b9e|2a52f0656b7a3173|2aad4bcb818fb828|1851166229||t20261.7637479161s|s286682b|286682|rds|local|vector|||0.453||
+study4_fit2|stem|af8f55283f8eee30|5428200174a8bfe0|b2dbdabea6cf4c63|705631039||t20261.7722785474s|s65854599b|65854599|rds|local|vector|||734.156||
+study3_fit_Felicity|stem|5738cfaeb81a75a8|9c1993ac7b7fa94f|ceceb1fa131414d9|-1476242752||t20261.785224903s|s26571910b|26571910|rds|local|vector|||1117.406||
+study3_fit_Sense|stem|839b6bc3121a760b|291578528989f269|ceceb1fa131414d9|-1635822795||t20261.7970313867s|s26874858b|26874858|rds|local|vector|||1019.047||
+study2_fit_Felicity|stem|1285efefcbdf5a6e|7e20e24fb0be3888|63a2b18636d72866|2088504629||t20261.8218811882s|s29831433b|29831433|rds|local|vector|||2145.891|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+study2_fit_Sense|stem|34bdaea28c59bcb6|36eb282d4bcb4684|63a2b18636d72866|1236179676||t20261.84647038s|s30350640b|30350640|rds|local|vector|||2123.375||
+study2_prior_fit|stem|ffe71b06e9a58aac|fa655daa63571d55|63a2b18636d72866|900917042||t20261.8487917483s|s30009056b|30009056|rds|local|vector|||199.406||
+study1_fit_Sense|stem|c9e19a54d9e98be5|ed4e7ab242303640|c454398b581db4b8|-1886000670||t20261.8527752317s|s10665462b|10665462|rds|local|vector|||343.516||
+study1_prior_fit|stem|a50661ab2765d28f|49ff868a6b52ea59|c454398b581db4b8|-1676393110||t20261.8539263683s|s10859541b|10859541|rds|local|vector|||98.781|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+study1_fit_Felicity|stem|910036faf2ef236f|be180fe5ad4f8f76|c454398b581db4b8|-479870615||t20261.8588840339s|s10824882b|10824882|rds|local|vector|||427.672||
+study4_plot_slopes_by_item|stem|0cb31cb286c36d13|3951dcc746ccc965|556aab5eb499d2b9|299059724||t20261.8589289614s|s38028939b|38028939|rds|local|vector|||2.047||
+study4_plot_model_predictions|stem|744a9f1f1571d297|ffdaf3dfe9987e66|faf5ae0cad3d4cf3|-1829142559||t20261.8589599313s|s26901955b|26901955|rds|local|vector|||1.468|Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Removed 792 rows containing missing values or values outside the scale rangegeom_point.. Removed 748 rows containing missing values or values outside the scale rangegeom_point.|
+study4_plot_scree|stem|e8b30dc6cdde5a7e|ba107c5d33d43aa2|5301e1b4e13865d6|163919870||t20261.8589612766s|s193392b|193392|rds|local|vector|||0.047||
+study4_plot_clusters|stem|0cac21d7390f6887|56e6b9590234f921|ef0bc9b1c954baed|-1714529155||t20261.858966425s|s255515b|255515|rds|local|vector|||0.328|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
+study4_pid_means|stem|e612dc4953a6855d|a0ea04be15cef903|3d6132f5f7bec9f8|2043831728||t20261.8590276329s|s27986169b|27986169|rds|local|vector|||4.125||
+study4_item_means|stem|33bc3263e7d67c87|e831dbf7bcc814c7|22bed845ee9469fd|-1164308669||t20261.8590352797s|s1653321b|1653321|rds|local|vector|||0.532||
+study3_item_means_Felicity|stem|70f41182c0d13699|bb5c946ae1e6f6ed|c36810b848fbcf35|612702968||t20261.859043897s|s2635349b|2635349|rds|local|vector|||0.593||
+study3_item_means_Sense|stem|6d97a4398114829f|21fb75f56907f235|77ef2e0623076c8f|-1042106706||t20261.859052309s|s2628351b|2628351|rds|local|vector|||0.546||
+study3_plot_item_correlations|stem|c2ae1d620e1f551b|92e31d64ab64a802|3c68a86bafb3981a|-1040588970||t20261.8591037726s|s130308099b|130308099|rds|local|vector|||0.234|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
+study2_category_means_Felicity|stem|490fd0e93fa76e75|5eba8215435663ad|2ba82333c6a93abf|-1761618158||t20261.8591107045s|s802935b|802935|rds|local|vector|||0.469||
+study2_item_means_Felicity|stem|f2be72a346a0de9a|3ddca1b0826a8de6|d2f9751189b9b7d6|1289842985||t20261.8591201652s|s2636535b|2636535|rds|local|vector|||0.656||
+study2_category_means_Sense|stem|085b99bad27f7aa4|528683e5f30f8788|714ba029538a0b05|-837102513||t20261.8591254835s|s799691b|799691|rds|local|vector|||0.406||
+study2_item_means_Sense|stem|e892931e8628beb9|e33cc57f88cd0a81|4881e5f1c2d6e3c1|-56383760||t20261.8591351662s|s2630120b|2630120|rds|local|vector|||0.688||
 plot_study4_slopes_by_item|function|07271e9ca195e437
 extract_study2_category_means|function|d717e21d98c50ee4
 plot_study4_scree|function|2407af08999a3111
 plot_study2_categories|function|5d8377b8932e9823
 plot_study3_items|function|0fd936b45eac012b
 plot_study4_clusters|function|c8ab87116bdf183e
-.Random.seed|object|a04d96ae18437c72
+.Random.seed|object|6cae9ba8a0e60bb7
 extract_study2_item_means|function|09c943fb6aa1e753
 plot_study1_categories|function|55026f252add471f
 fit_study3_model|function|de8d20a01e1a3319
@@ -95,3 +68,30 @@ plot_study3_item_scatterplot|function|8e9dd0ac0c304d00
 extract_study4_pid_means|function|bf54341e265ea906
 extract_study2_category_bayes_factors|function|4bee9b65994db901
 plot_study2_category_differences|function|4720ee63caf9925d
+study2_category_bfs_Felicity|stem|2ca826885ec6e419|16a12c5e96879c65|8936fb4504d80b76|740036187||t20261.8618368816s|s484b|484|rds|local|vector|||8.375||
+study2_category_bfs_Sense|stem|43293fee7198ed2e|8990bf697e66fe75|cffff7784265ae07|1853176952||t20261.8619239493s|s483b|483|rds|local|vector|||7.25||
+study1_category_means_Sense|stem|21dc71e5170468b5|129d7ab248d18847|64de93222c531c12|440179630||t20261.8619309837s|s237427b|237427|rds|local|vector|||0.375||
+study1_item_means_Sense|stem|1cbac068fdae2648|6e91e0b4d9660dce|1147bc8b0c1450a7|205465543||t20261.8619371602s|s789402b|789402|rds|local|vector|||0.453||
+study1_category_bfs_Sense|stem|082cc37ce6e6fff9|fccd952192da88d8|bc62a9b18f4d5199|-1473800587||t20261.861958102s|s286b|286|rds|local|vector|||1.594||
+study1_item_means_Felicity|stem|3751e046472f6d65|539a88d93c26e5de|15a73a03619d9078|1249386343||t20261.8619663335s|s793064b|793064|rds|local|vector|||0.453||
+study1_category_means_Felicity|stem|d531f316ba0b4895|0ebf103047481a97|fadc11b4492f14ea|-180248729||t20261.861970229s|s238752b|238752|rds|local|vector|||0.312||
+study1_category_bfs_Felicity|stem|bfe957ce599b45dd|1f263b08fbe8dddd|4832d7b4dc395b49|-2128949845||t20261.8619893658s|s287b|287|rds|local|vector|||1.609||
+study4_plot_pid_scatterplot|stem|894e20de676d4dcc|8c1beefa251ae531|0143fd8fdc6e17ef|-1021283822||t20261.8620105413s|s28219065b|28219065|rds|local|vector|||0.453||
+study4_plot_item_scatterplot|stem|ad28eec6e8c4802c|9a3f14fa89b17046|57f1dbc550470000|-1843201186||t20261.8620172951s|s1869952b|1869952|rds|local|vector|||0.391|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study3_plot_item_scatterplot_Felicity|stem|e8a61c37c4f3662b|63cb4ac55fa07787|513728e3bd721921|1789999238||t20261.8620246509s|s2870841b|2870841|rds|local|vector|||0.39||
+study3_plot_item_Felicity|stem|00792a1b3a39f5c8|69310cb7fa034222|75fb9b535261b542|1731217030||t20261.8620373692s|s13469928b|13469928|rds|local|vector|||0.344|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study3_plot_item_Sense|stem|3d3e92030ab11056|92e7a0767107c652|2d534325635bfee7|-1119318857||t20261.8620495565s|s13437097b|13437097|rds|local|vector|||0.281|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study3_plot_item_scatterplot_Sense|stem|8364742cc860255f|85e9f74e099f742e|abc9e4f9a9ab2c3e|-917835051||t20261.8620559114s|s2863954b|2863954|rds|local|vector|||0.329|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 3 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study2_plot_category_Felicity|stem|5a6938aead932db4|f256e15fd5c415da|59850f63d376bdd7|-1416072008||t20261.8620741323s|s4617740b|4617740|rds|local|vector|||1.141||
+study2_plot_item_Felicity|stem|f49813e7972904ee|06bc630e1d85f432|174d816b128281b9|-1480850177||t20261.862097338s|s13793066b|13793066|rds|local|vector|||1.141||
+study2_plot_category_Sense|stem|09946cebfab6479f|8bb6dc426fe99196|eb1e6e851fef964f|-319495545||t20261.8621152711s|s4602065b|4602065|rds|local|vector|||1.093||
+study2_plot_item_Sense|stem|9153fc94fe4a0130|72bfa2f88b52eb8c|268c056f3fc5eeaa|949256922||t20261.8621383654s|s13769058b|13769058|rds|local|vector|||1.109||
+study2_plot_diff_Felicity|stem|035b10094833c5b7|caefbe21b417b2dd|17c4009922218242|-1227623937||t20261.8621685107s|s38450485b|38450485|rds|local|vector|||0.922|Removed 2 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study2_plot_diff_Sense|stem|3e5cea607dd8867d|84c99a88167b89bd|42b3f336c1a5c181|1091973055||t20261.8622016031s|s38934838b|38934838|rds|local|vector|||1.125|Removed 22 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 704 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 68 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_category_Sense|stem|b321d89aaee11d71|19274efabf8c11f1|3b31f156cbd8fca5|-918963060||t20261.8622045089s|s2418531b|2418531|rds|local|vector|||0.047|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study1_plot_item_Sense|stem|0fa98773a9b8c897|406d278c773ce3e0|7b62d93ad2b2fab8|1657060598||t20261.8622099363s|s4186623b|4186623|rds|local|vector|||0.14||
+study1_plot_diff_Sense|stem|5cd9e39ad039ecf4|fe08ae43f8b232a1|2ce75f2cd1eb8100|1686439646||t20261.8622224851s|s12846135b|12846135|rds|local|vector|||0.281|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_item_Felicity|stem|49fa1cc23836c50b|35bd0bc5fe0b7d9e|27b5f580a860a6a7|-207328773||t20261.8622276606s|s4206571b|4206571|rds|local|vector|||0.125||
+study1_plot_category_Felicity|stem|c490113d37f29431|ed38cc51cef53298|2d864a4814065cb9|-684942807||t20261.862230013s|s2430779b|2430779|rds|local|vector|||0.016|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
+study1_plot_diff_Felicity|stem|e097beeeca742921|ee2c7aaf44e4f068|d6f4027cba39279e|-1479524818||t20261.8622421629s|s13009584b|13009584|rds|local|vector|||0.25|Removed 188 rows containing missing values or values outside the scale rangestat_slabinterval.|
+study1_plot_category|stem|792445e8b4369752|c706e9c1de221d1a|b2c59b09bf4a2f44|-50214846||t20261.8622497035s|s4686655b|4686655|rds|local|vector|||0.312||
