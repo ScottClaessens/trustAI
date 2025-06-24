@@ -97,10 +97,17 @@ list(
       extract_study2_category_bayes_factors(study2_fit, study2_prior_fit)
       ),
     # plot categories
-    tar_target(
-      study2_plot_category,
-      plot_study2_categories(study2_data, measure, study2_category_means)
+    tar_map(
+      values = tibble(
+        resp = c("1_Place_Trust", "2_Place_Trust", "Trustworthiness")
       ),
+      tar_target(
+        study2_plot_category,
+        plot_study2_categories(
+          study2_data, measure, resp, study2_category_means
+        )
+      )
+    ),
     # plot items
     tar_target(
       study2_plot_item,
@@ -112,6 +119,18 @@ list(
       plot_study2_category_differences(study2_fit, measure, 
                                        study2_category_bfs)
       )
+  ),
+  # combined plots
+  tar_target(
+    study2_plot_category,
+    combine_plots_study2_categories(
+      study2_plot_category_1_Place_Trust_Felicity,
+      study2_plot_category_2_Place_Trust_Felicity,
+      study2_plot_category_Trustworthiness_Felicity,
+      study2_plot_category_1_Place_Trust_Sense,
+      study2_plot_category_2_Place_Trust_Sense,
+      study2_plot_category_Trustworthiness_Sense
+    )
   ),
   
   #### Study 3 ####

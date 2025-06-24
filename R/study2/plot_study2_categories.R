@@ -1,5 +1,5 @@
 # function for plotting categories with model means in study 2
-plot_study2_categories <- function(data, measure, category_means) {
+plot_study2_categories <- function(data, measure, resp, category_means) {
   # category labels
   labels <- c(
     "Abstract"             = "Abstract",
@@ -12,94 +12,97 @@ plot_study2_categories <- function(data, measure, category_means) {
     "Inanimate_Artifiacts" = "Inanimate artifacts",
     "Inanimate_Nature"     = "Inanimate nature"
   )
-  # plotting function
-  plot_fun <- function(resp) {
-    # correctly ordered categories
-    order <-
-      category_means %>%
-      filter(Trust_Type == resp) %>%
-      arrange(desc(Estimate)) %>%
-      pull(Category)
-    # get y-axis label
-    question <-
+  # correctly ordered categories
+  order <-
+    category_means %>%
+    filter(Trust_Type == resp) %>%
+    arrange(desc(Estimate)) %>%
+    pull(Category)
+  AI <-
+    category_means %>%
+    filter(Trust_Type == resp) %>%
+    arrange(desc(Estimate)) %>%
+    mutate(AI = Category == "AI") %>%
+    pull(AI)
+  # get y-axis label
+  ylab <-
+    ifelse(
+      resp == "1_Place_Trust",
+      "I trust [item]",
       ifelse(
-        resp == "1_Place_Trust",
-        "I trust [item]",
-        ifelse(
-          resp == "2_Place_Trust",
-          "I trust [item] to do that",
-          "[item] is trustworthy"
-        )
+        resp == "2_Place_Trust",
+        "I trust [item] to do that",
+        "[item] is trustworthy"
       )
-    ylab <-
-      ifelse(
-        measure == "Felicity",
-        paste0("Does '", question, "' \nsound weird or natural?"),
-        paste0("If someone said '", question, 
-               "',\nwould that sentence make sense?")
-      )
-    # filter to specific measure and response
+    )
+  # filter to specific measure and response
+  p <-
     data %>%
-      filter(Measure == measure & Trust_Type == resp) %>%
-      # plot
-      ggplot() +
-      geom_jitter(
-        data = data,
-        mapping = aes(
-          x = fct_relevel(Category, order),
-          y = Rating
-        ),
-        width = 0.3,
-        height = 0.5,
-        size = 0.01,
-        colour = "grey60",
-        alpha = 0.3
-      ) +
-      geom_pointrange(
-        data = filter(category_means, Trust_Type == resp),
-        mapping = aes(
-          x = Category,
-          y = Estimate,
-          ymin = Q2.5,
-          ymax = Q97.5
-        ),
-        size = 0.1
-      ) +
-      scale_y_continuous(
-        name = ylab,
-        breaks = 1:7,
-        limits = c(1, 7),
-        oob = scales::squish
-      ) +
-      scale_x_discrete(labels = function(x) labels[x]) +
-      theme_minimal() +
-      theme(
-        strip.placement = "outside",
-        strip.text.x = element_text(size = 9),
-        strip.text.y = element_text(size = 7),
-        legend.title = element_blank(),
-        axis.title.x = element_blank(),
-        axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(size = 7, angle = 45, hjust = 1),
-        axis.text.y = element_text(size = 6),
-        panel.grid.minor = element_blank(),
-        panel.grid.major = element_line(linewidth = 0.3),
-        panel.spacing.x = unit(1.0, "lines"),
-        panel.spacing.y = unit(0.7, "lines")
-      )
+    filter(Measure == measure & Trust_Type == resp) %>%
+    mutate(AI = Category == "AI") %>%
+    # plot
+    ggplot() +
+    geom_boxplot(
+      mapping = aes(
+        x = fct_relevel(Category, order),
+        y = Rating,
+        colour = AI
+      ),
+      width = 0.5,
+      size = 0.4,
+      outlier.shape = NA
+    ) +
+    scale_colour_manual(values = c("#d9d9d9", "#ffd9d9")) +
+    ggnewscale::new_scale_colour() +
+    geom_pointrange(
+      data = category_means %>% 
+        filter(Trust_Type == resp) %>% 
+        mutate(AI = Category == "AI"),
+      mapping = aes(
+        x = Category,
+        y = Estimate,
+        ymin = Q2.5,
+        ymax = Q97.5,
+        colour = AI
+      ),
+      size = 0.4
+    ) +
+    scale_colour_manual(values = c("black", "red")) +
+    scale_y_continuous(
+      name = ylab,
+      breaks = 1:7,
+      limits = c(1, 7),
+      oob = scales::squish
+    ) +
+    scale_x_discrete(labels = function(x) labels[x]) +
+    theme_minimal() +
+    theme(
+      strip.placement = "outside",
+      strip.text.x = element_text(size = 9),
+      strip.text.y = element_text(size = 7),
+      legend.position = "none",
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(size = 9),
+      axis.text.x = element_text(
+        size = 7, angle = 30, hjust = 1,
+        colour = ifelse(AI, "red", "black")
+      ),
+      axis.text.y = element_text(size = 6),
+      panel.grid.minor = element_blank(),
+      panel.grid.major = element_blank(),
+      panel.spacing.x = unit(1.0, "lines"),
+      panel.spacing.y = unit(0.7, "lines")
+    )
+  # if top plot, add title
+  title <-
+    ifelse(
+      measure == "Felicity",
+      paste0("Does [...] sound\nweird or natural?"),
+      paste0("If someone said [...],\nwould that sentence make sense?")
+    )
+  if (resp == "1_Place_Trust") {
+    p + ggtitle(title)
+  } else {
+    p
   }
-  # put together
-  out <-
-    plot_fun(resp = "1_Place_Trust") +
-    plot_fun(resp = "2_Place_Trust") +
-    plot_fun(resp = "Trustworthiness") +
-    plot_annotation(tag_levels = "a")
-  # save plot
-  ggsave(
-    plot = out,
-    filename = paste0("plots/study2_categories_", measure, ".pdf"),
-    width = 7,
-    height = 3.5
-  )
-  return(out)
 }

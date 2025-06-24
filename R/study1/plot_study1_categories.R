@@ -20,18 +20,18 @@ plot_study1_categories <- function(data, measure, category_means) {
     # filter to specific measure
     data %>%
     filter(Measure == measure) %>%
+    mutate(AI = Category == "AI") %>%
     # plot
     ggplot() +
-    geom_jitter(
-      data = mutate(data, AI = Category == "AI"),
+    geom_boxplot(
       mapping = aes(
         x = factor(Category, levels = order),
         y = Rating,
         colour = AI
       ),
-      width = 0.3,
-      height = 0.5,
-      size = 0.01
+      width = 0.5,
+      size = 0.4,
+      outlier.shape = NA
     ) +
     scale_colour_manual(values = c("#d9d9d9", "#ffd9d9")) +
     ggnewscale::new_scale_colour() +
@@ -82,7 +82,7 @@ plot_study1_categories <- function(data, measure, category_means) {
       axis.text.x = element_text(size = 9, angle = 45, hjust = 1,
                                  colour = ifelse(order == "AI", "red", "black")),
       panel.grid.minor = element_blank(),
-      panel.grid.major = element_line(linewidth = 0.3),
+      panel.grid.major = element_blank(),
       panel.spacing.x = unit(1.0, "lines"),
       panel.spacing.y = unit(0.7, "lines")
     )
