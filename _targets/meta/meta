@@ -20,9 +20,7 @@ study1_fit_Sense|stem|c9e19a54d9e98be5|ed4e7ab242303640|c454398b581db4b8|-188600
 study1_prior_fit|stem|a50661ab2765d28f|49ff868a6b52ea59|c454398b581db4b8|-1676393110||t20261.8539263683s|s10859541b|10859541|rds|local|vector|||98.781|There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 study1_fit_Felicity|stem|910036faf2ef236f|be180fe5ad4f8f76|c454398b581db4b8|-479870615||t20261.8588840339s|s10824882b|10824882|rds|local|vector|||427.672||
 study4_plot_slopes_by_item|stem|0cb31cb286c36d13|3951dcc746ccc965|556aab5eb499d2b9|299059724||t20261.8589289614s|s38028939b|38028939|rds|local|vector|||2.047||
-study4_plot_model_predictions|stem|744a9f1f1571d297|ffdaf3dfe9987e66|faf5ae0cad3d4cf3|-1829142559||t20261.8589599313s|s26901955b|26901955|rds|local|vector|||1.468|Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Removed 792 rows containing missing values or values outside the scale rangegeom_point.. Removed 748 rows containing missing values or values outside the scale rangegeom_point.|
 study4_plot_scree|stem|e8b30dc6cdde5a7e|ba107c5d33d43aa2|5301e1b4e13865d6|163919870||t20261.8589612766s|s193392b|193392|rds|local|vector|||0.047||
-study4_plot_clusters|stem|0cac21d7390f6887|56e6b9590234f921|ef0bc9b1c954baed|-1714529155||t20261.858966425s|s255515b|255515|rds|local|vector|||0.328|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
 study4_pid_means|stem|e612dc4953a6855d|a0ea04be15cef903|3d6132f5f7bec9f8|2043831728||t20261.8590276329s|s27986169b|27986169|rds|local|vector|||4.125||
 study4_item_means|stem|33bc3263e7d67c87|e831dbf7bcc814c7|22bed845ee9469fd|-1164308669||t20261.8590352797s|s1653321b|1653321|rds|local|vector|||0.532||
 study3_item_means_Felicity|stem|70f41182c0d13699|bb5c946ae1e6f6ed|c36810b848fbcf35|612702968||t20261.859043897s|s2635349b|2635349|rds|local|vector|||0.593||
@@ -37,7 +35,6 @@ study1_item_means_Felicity|stem|3751e046472f6d65|539a88d93c26e5de|15a73a03619d90
 study1_category_means_Felicity|stem|d531f316ba0b4895|0ebf103047481a97|fadc11b4492f14ea|-180248729||t20261.861970229s|s238752b|238752|rds|local|vector|||0.312||
 study1_category_bfs_Felicity|stem|bfe957ce599b45dd|1f263b08fbe8dddd|4832d7b4dc395b49|-2128949845||t20261.8619893658s|s287b|287|rds|local|vector|||1.609||
 study4_plot_pid_scatterplot|stem|894e20de676d4dcc|8c1beefa251ae531|0143fd8fdc6e17ef|-1021283822||t20261.8620105413s|s28219065b|28219065|rds|local|vector|||0.453||
-study4_plot_item_scatterplot|stem|ad28eec6e8c4802c|9a3f14fa89b17046|57f1dbc550470000|-1843201186||t20261.8620172951s|s1869952b|1869952|rds|local|vector|||0.391|ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 1 unlabeled data points too many overlaps. Consider increasing max.overlaps|
 study2_plot_diff_Felicity|stem|035b10094833c5b7|caefbe21b417b2dd|17c4009922218242|-1227623937||t20261.8621685107s|s38450485b|38450485|rds|local|vector|||0.922|Removed 2 rows containing missing values or values outside the scale rangestat_slabinterval.|
 study2_plot_diff_Sense|stem|3e5cea607dd8867d|84c99a88167b89bd|42b3f336c1a5c181|1091973055||t20261.8622016031s|s38934838b|38934838|rds|local|vector|||1.125|Removed 22 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 704 rows containing missing values or values outside the scale rangestat_slabinterval.. Removed 68 rows containing missing values or values outside the scale rangestat_slabinterval.|
 study1_plot_diff_Sense|stem|5cd9e39ad039ecf4|fe08ae43f8b232a1|2ce75f2cd1eb8100|1686439646||t20261.8622224851s|s12846135b|12846135|rds|local|vector|||0.281|Removed 103 rows containing missing values or values outside the scale rangestat_slabinterval.|
@@ -62,22 +59,25 @@ study2_plot_category_2_Place_Trust_Felicity|stem|c4ac1bd104b06a0c|263a0f2eb86951
 study2_plot_category|stem|90166b12b1c849ef|268ee63397c9541b|2edd37d2816de87b|-193457723||t20263.527054815s|s12003296b|12003296|rds|local|vector|||0.797||
 study3_plot_item_Felicity|stem|df5bffc0df4a99d1|69310cb7fa034222|fc4a3e870ec93a88|1731217030||t20263.5668909184s|s13519832b|13519832|rds|local|vector|||0.765|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
 study3_plot_item_Sense|stem|18686c72f1e3bd1a|92e7a0767107c652|d3f57708ba20337c|-1119318857||t20263.566909102s|s13484854b|13484854|rds|local|vector|||0.781|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study3_plot_item_scatterplot_Sense|stem|02279f26a7f429cc|85e9f74e099f742e|9e87a71cbac34265|-917835051||t20264.6371817615s|s2882282b|2882282|rds|local|vector|||0.047||
-study3_plot_item_scatterplot_Felicity|stem|316933952e5b4589|63cb4ac55fa07787|66b4cdd5308680e5|1789999238||t20264.6371849994s|s2888649b|2888649|rds|local|vector|||0.016||
-study3_plot_item_scatterplot|stem|a98cc0c1817d6bcd|422532aabbc593a7|184f056129cd9e98|1194952842||t20264.6371993502s|s5604294b|5604294|rds|local|vector|||0.86|ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 6 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study4_plot_item_scatterplot|stem|6cbbbc3ac31222d0|9a3f14fa89b17046|dcdf81d7faad0f7c|-1843201186||t20264.660971449s|s1880660b|1880660|rds|local|vector|||0.297|ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 8 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study3_plot_item_scatterplot_Sense|stem|cf685b3a8a8079a9|85e9f74e099f742e|6b31f1a0e34e2a7a|-917835051||t20264.6609747652s|s2882467b|2882467|rds|local|vector|||0.031||
+study3_plot_item_scatterplot_Felicity|stem|c89347cf43fbcd94|63cb4ac55fa07787|9df6e8581b90e02e|1789999238||t20264.660978386s|s2888856b|2888856|rds|local|vector|||0.031||
+study3_plot_item_scatterplot|stem|22fe5c3ddca47445|422532aabbc593a7|d83b386ff8ef2f5f|1194952842||t20264.6609911401s|s5604549b|5604549|rds|local|vector|||0.734|ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 6 unlabeled data points too many overlaps. Consider increasing max.overlaps|
+study4_plot_model_predictions|stem|7b37d1fa516c757f|ffdaf3dfe9987e66|4679923fa26e1141|-1829142559||t20264.7051033329s|s26655721b|26655721|rds|local|vector|||2.407|Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Removed 792 rows containing missing values or values outside the scale rangegeom_point.. Removed 748 rows containing missing values or values outside the scale rangegeom_point.|
+study4_plot_clusters|stem|b488a93283a5e99e|56e6b9590234f921|e49598e5ad4e9e09|-1714529155||t20264.714512002s|s255807b|255807|rds|local|vector|||0.922|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
 plot_study4_slopes_by_item|function|07271e9ca195e437
 extract_study2_category_means|function|9c9a7923f62869b1
 plot_study4_scree|function|2407af08999a3111
 plot_study2_categories|function|9126ad89c71f3553
 plot_study3_items|function|b38eee9545b26b6f
-plot_study4_clusters|function|c8ab87116bdf183e
-.Random.seed|object|0eda9a7b2787b4fc
+plot_study4_clusters|function|5e9bc8d9a102243e
+.Random.seed|object|af04fa97af0fe39c
 extract_study2_item_means|function|e657374129f726d7
 plot_study1_categories|function|80eceb36fdf2ea81
 fit_study3_model|function|de8d20a01e1a3319
 extract_study3_item_means|function|9146449fa028de27
 extract_study4_item_means|function|68f140f97067de45
-plot_study4_item_scatterplot|function|9e3befe923b02168
+plot_study4_item_scatterplot|function|554e73fbc3227f91
 plot_study3_item_correlations|function|221b964755691aee
 fit_study4_model1|function|d709b9df0a11995c
 fit_study4_model2|function|b77be29997f2b9f7
@@ -94,9 +94,9 @@ plot_study1_items|function|1be8e3a8dfff6bd2
 fit_study4_kmeans|function|042b6f52aa619d55
 fit_study2_model|function|dda7e5727e123230
 plot_study2_items|function|a063615bbe5b39c8
-plot_study4_model_predictions|function|4c51eb721ec2acd8
+plot_study4_model_predictions|function|d1176e58b98938e7
 plot_study4_pid_scatterplot|function|6e4cd31faa4642d3
-plot_study3_item_scatterplot|function|67724ec17c737512
+plot_study3_item_scatterplot|function|4aed021b61e5d0e7
 extract_study4_pid_means|function|bf54341e265ea906
 extract_study2_category_bayes_factors|function|4bee9b65994db901
 plot_study2_category_differences|function|4720ee63caf9925d

@@ -20,12 +20,20 @@ plot_study4_clusters <- function(study4_data, study4_kmeans) {
       ) +
       geom_jitter() +
       scale_x_continuous(
-        name = str_to_title(str_replace_all(x, "_", " ")),
+        name = ifelse(
+          x == "reliable",
+          "[item] is reliable",
+          "[item] has good intentions"
+        ),
         limits = c(1, 7),
         breaks = 1:7
       ) +
       scale_y_continuous(
-        name = str_to_title(str_replace_all(y, "_", " ")),
+        name = ifelse(
+          y == "trust",
+          "I trust [item]",
+          "[item] is reliable"
+        ),
         limits = c(1, 7),
         breaks = 1:7
       ) +

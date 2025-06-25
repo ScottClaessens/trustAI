@@ -35,7 +35,8 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
       geom_point() +
       ggrepel::geom_text_repel(
         size = 2.2,
-        seed = 1
+        seed = 1,
+        segment.size = 0.1
       ) +
       scale_x_continuous(
         name = ifelse(
