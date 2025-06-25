@@ -10,7 +10,7 @@ plot_study3_items <- function(data, measure, item_means) {
   AI_items <- c(
     "ChatGPT", "LLM", "Self_Driving_Car",
     "AI", "Amazon_Alexa", "Robot"
-    )
+  )
   # order
   order <- 
     item_means %>%
@@ -24,20 +24,21 @@ plot_study3_items <- function(data, measure, item_means) {
     mutate(
       Trait = factor(traits[Trait], levels = traits),
       AI = Item %in% AI_items
-      ) %>%
+    ) %>%
     # plot
     ggplot() +
-    geom_jitter(
+    geom_boxplot(
       mapping = aes(
         x = fct_relevel(Item, order),
         y = Rating,
         colour = AI
       ),
-      width = 0.2,
-      height = 0.5,
-      size = 0.03,
-      alpha = 0.15
+      width = 0.4,
+      size = 0.3,
+      outlier.shape = NA
     ) +
+    scale_colour_manual(values = c("#d9d9d9", "#ffd9d9")) +
+    ggnewscale::new_scale_colour() +
     geom_pointrange(
       data = mutate(
         item_means,
@@ -53,6 +54,7 @@ plot_study3_items <- function(data, measure, item_means) {
       ),
       size = 0.1
     ) +
+    scale_colour_manual(values = c("black", "red")) +
     facet_wrap(
       Trait ~ .,
       ncol = 1,
@@ -85,7 +87,7 @@ plot_study3_items <- function(data, measure, item_means) {
     theme_minimal() +
     theme(
       strip.text.x = element_text(size = 9),
-      legend.title = element_blank(),
+      legend.position = "none",
       axis.title.x = element_blank(),
       axis.title.y = element_text(size = 7),
       axis.text.x = element_text(size = 7, angle = 45, hjust = 1,
@@ -93,8 +95,7 @@ plot_study3_items <- function(data, measure, item_means) {
                                                  "red", "grey60")),
       axis.text.y = element_text(size = 6),
       panel.grid.minor = element_blank(),
-      panel.grid.major = element_line(linewidth = 0.3),
-      legend.position = "none"
+      panel.grid.major = element_blank()
     )
   # save plot
   ggsave(

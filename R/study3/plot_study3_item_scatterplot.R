@@ -13,42 +13,57 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
                        "AI", "Amazon_Alexa", "Robot"),
       Item = str_replace_all(Item, "_", " ")
       )
+  # get title
+  title <-
+    ifelse(
+      measure == "Felicity",
+      paste0("Does [...] sound weird or natural?"),
+      paste0("If someone said [...], would that sentence make sense?")
+    )
   # plotting function
   plotFun <- function(var) {
-    ggplot(
-      data = data,
-      mapping = aes(
-        x = !!sym(var),
-        y = Trust,
-        label = Item,
-        colour = AI
-        )
+    p <-
+      ggplot(
+        data = data,
+        mapping = aes(
+          x = !!sym(var),
+          y = Trust,
+          label = Item,
+          colour = AI
+          )
       ) +
       geom_point() +
-      ggrepel::geom_text_repel(size = 1.5) +
+      ggrepel::geom_text_repel(
+        size = 2.2,
+        seed = 1
+      ) +
       scale_x_continuous(
+        name = ifelse(
+          var == "Reliable",
+          "[item] is reliable",
+          "[item] has good intentions"
+        ),
         breaks = 1:7,
         limits = c(1, 7)
       ) +
       scale_y_continuous(
+        name = "I trust [item]",
         breaks = 1:7,
         limits = c(1, 7)
       ) +
       scale_colour_manual(values = c("grey40", "red")) +
       theme_classic() +
       theme(legend.position = "none")
+    # add title
+    if (var == "Reliable") {
+      p + ggtitle(title)
+    } else {
+      p
+    }
   }
   # plots
   pA <- plotFun("Reliable")
   pB <- plotFun("Good Intentions")
   # put together
-  p <- (pA + pB) + plot_annotation(title = measure)
-  # save
-  ggsave(
-    filename = paste0("plots/study3_item_scatterplot_", measure, ".pdf"),
-    plot = p,
-    height = 3.5,
-    width = 6
-  )
-  return(p)
+  (pA + pB) + plot_layout(axis_titles = "collect")
 }
