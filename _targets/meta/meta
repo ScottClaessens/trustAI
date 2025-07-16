@@ -59,25 +59,24 @@ study2_plot_category_2_Place_Trust_Felicity|stem|c4ac1bd104b06a0c|263a0f2eb86951
 study2_plot_category|stem|90166b12b1c849ef|268ee63397c9541b|2edd37d2816de87b|-193457723||t20263.527054815s|s12003296b|12003296|rds|local|vector|||0.797||
 study3_plot_item_Felicity|stem|df5bffc0df4a99d1|69310cb7fa034222|fc4a3e870ec93a88|1731217030||t20263.5668909184s|s13519832b|13519832|rds|local|vector|||0.765|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
 study3_plot_item_Sense|stem|18686c72f1e3bd1a|92e7a0767107c652|d3f57708ba20337c|-1119318857||t20263.566909102s|s13484854b|13484854|rds|local|vector|||0.781|Vectorized input to element_text is not officially supported.ℹ Results may be unexpected or may change in future versions of ggplot2.|
-study4_plot_item_scatterplot|stem|6cbbbc3ac31222d0|9a3f14fa89b17046|dcdf81d7faad0f7c|-1843201186||t20264.660971449s|s1880660b|1880660|rds|local|vector|||0.297|ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 8 unlabeled data points too many overlaps. Consider increasing max.overlaps|
 study3_plot_item_scatterplot_Sense|stem|cf685b3a8a8079a9|85e9f74e099f742e|6b31f1a0e34e2a7a|-917835051||t20264.6609747652s|s2882467b|2882467|rds|local|vector|||0.031||
 study3_plot_item_scatterplot_Felicity|stem|c89347cf43fbcd94|63cb4ac55fa07787|9df6e8581b90e02e|1789999238||t20264.660978386s|s2888856b|2888856|rds|local|vector|||0.031||
 study3_plot_item_scatterplot|stem|22fe5c3ddca47445|422532aabbc593a7|d83b386ff8ef2f5f|1194952842||t20264.6609911401s|s5604549b|5604549|rds|local|vector|||0.734|ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 2 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 6 unlabeled data points too many overlaps. Consider increasing max.overlaps|
 study4_plot_model_predictions|stem|7b37d1fa516c757f|ffdaf3dfe9987e66|4679923fa26e1141|-1829142559||t20264.7051033329s|s26655721b|26655721|rds|local|vector|||2.407|Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Predictions are treated as continuous variables in conditional_effects by default which is likely invalid for ordinal families. Please set categorical to TRUE.. Removed 792 rows containing missing values or values outside the scale rangegeom_point.. Removed 748 rows containing missing values or values outside the scale rangegeom_point.|
-study4_plot_clusters|stem|b488a93283a5e99e|56e6b9590234f921|e49598e5ad4e9e09|-1714529155||t20264.714512002s|s255807b|255807|rds|local|vector|||0.922|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
+study4_plot_clusters|stem|fd39cfc45934d8b2|56e6b9590234f921|74487d061f0ffedd|-1714529155||t20285.746204272s|s255760b|255760|rds|local|vector|||2.61|Removed 62 rows containing missing values or values outside the scale rangegeom_point.. Removed 56 rows containing missing values or values outside the scale rangegeom_point.. Removed 57 rows containing missing values or values outside the scale rangegeom_point.|
 plot_study4_slopes_by_item|function|07271e9ca195e437
 extract_study2_category_means|function|9c9a7923f62869b1
 plot_study4_scree|function|2407af08999a3111
 plot_study2_categories|function|9126ad89c71f3553
 plot_study3_items|function|b38eee9545b26b6f
-plot_study4_clusters|function|5e9bc8d9a102243e
-.Random.seed|object|af04fa97af0fe39c
+plot_study4_clusters|function|4f8f5f7ee4d89aaa
+.Random.seed|object|485a9bea8cacb11c
 extract_study2_item_means|function|e657374129f726d7
 plot_study1_categories|function|80eceb36fdf2ea81
 fit_study3_model|function|de8d20a01e1a3319
 extract_study3_item_means|function|9146449fa028de27
 extract_study4_item_means|function|68f140f97067de45
-plot_study4_item_scatterplot|function|554e73fbc3227f91
+plot_study4_item_scatterplot|function|7fef9807879cedc8
 plot_study3_item_correlations|function|221b964755691aee
 fit_study4_model1|function|d709b9df0a11995c
 fit_study4_model2|function|b77be29997f2b9f7
@@ -101,3 +100,4 @@ extract_study4_pid_means|function|bf54341e265ea906
 extract_study2_category_bayes_factors|function|4bee9b65994db901
 plot_study2_category_differences|function|4720ee63caf9925d
 combine_plots_study3_scatter|function|7dbfd0d9d008c79a
+study4_plot_item_scatterplot|stem|cffa15c33308cc70|9a3f14fa89b17046|7237acca7bf12940|-1843201186||t20285.7471707184s|s1880589b|1880589|rds|local|vector|||2.594|ggrepel 9 unlabeled data points too many overlaps. Consider increasing max.overlaps. ggrepel 8 unlabeled data points too many overlaps. Consider increasing max.overlaps|

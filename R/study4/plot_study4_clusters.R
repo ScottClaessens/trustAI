@@ -1,5 +1,6 @@
 # function to plot clusters from study 4
 plot_study4_clusters <- function(study4_data, study4_kmeans) {
+  cluster_labels <- c("Sceptics", "Non-agential trusters", "Agential trusters")
   clusters <-
     # get means for every participant
     study4_data %>%
@@ -11,7 +12,12 @@ plot_study4_clusters <- function(study4_data, study4_kmeans) {
     ) %>%
     rename(good_intentions = `good-intentions`) %>%
     # join clusters
-    mutate(Cluster = factor(study4_kmeans$model[[3]]$cluster))
+    mutate(
+      Cluster = factor(
+        cluster_labels[study4_kmeans$model[[3]]$cluster],
+        levels = cluster_labels
+      )
+    )
   # plotting function
   plot_fun <- function(x, y) {
     ggplot(

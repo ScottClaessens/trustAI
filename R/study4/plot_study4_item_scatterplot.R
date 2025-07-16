@@ -36,8 +36,8 @@ plot_study4_item_scatterplot <- function(study4_item_means) {
         force = 10,
         force_pull = 0.1,
         seed = 1,
-        colour = "darkgrey",
-        segment.color = "grey90",
+        colour = "black",
+        segment.color = "black",
         segment.size = 0.1
       ) +
       geom_point(
