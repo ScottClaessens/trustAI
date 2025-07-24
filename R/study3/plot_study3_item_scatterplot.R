@@ -66,5 +66,13 @@ plot_study3_item_scatterplot <- function(study3_item_means, measure) {
   pA <- plotFun("Reliable")
   pB <- plotFun("Good Intentions")
   # put together
-  (pA + pB) + plot_layout(axis_titles = "collect")
+  p <- (pA + pB) + plot_layout(axis_titles = "collect")
+  # save plot
+  ggsave(
+    plot = p,
+    filename = paste0("plots/study3_item_scatterplots_", measure, ".pdf"),
+    width = 6.5,
+    height = 4
+  )
+  return(p)
 }

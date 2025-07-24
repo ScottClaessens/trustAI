@@ -170,14 +170,6 @@ list(
     study3_plot_item_correlations,
     plot_study3_item_correlations(study3_fit_Felicity, study3_fit_Sense)
   ),
-  # combine scatterplots
-  tar_target(
-    study3_plot_item_scatterplot,
-    combine_plots_study3_scatter(
-      study3_plot_item_scatterplot_Felicity,
-      study3_plot_item_scatterplot_Sense
-    )
-  ),
   
   #### Study 4 ####
   
