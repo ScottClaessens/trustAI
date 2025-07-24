@@ -122,14 +122,21 @@ list(
   ),
   # combined plots
   tar_target(
-    study2_plot_category,
+    study2_plot_category_Felicity,
     combine_plots_study2_categories(
       study2_plot_category_1_Place_Trust_Felicity,
       study2_plot_category_2_Place_Trust_Felicity,
       study2_plot_category_Trustworthiness_Felicity,
+      measure = "Felicity"
+    )
+  ),
+  tar_target(
+    study2_plot_category_Sense,
+    combine_plots_study2_categories(
       study2_plot_category_1_Place_Trust_Sense,
       study2_plot_category_2_Place_Trust_Sense,
-      study2_plot_category_Trustworthiness_Sense
+      study2_plot_category_Trustworthiness_Sense,
+      measure = "Sense"
     )
   ),
   

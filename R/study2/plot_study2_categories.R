@@ -84,7 +84,7 @@ plot_study2_categories <- function(data, measure, resp, category_means) {
       axis.title.x = element_blank(),
       axis.title.y = element_text(size = 9),
       axis.text.x = element_text(
-        size = 7, angle = 30, hjust = 1,
+        size = 5, angle = 30, hjust = 1,
         colour = ifelse(AI, "red", "black")
       ),
       axis.text.y = element_text(size = 6),
@@ -97,8 +97,8 @@ plot_study2_categories <- function(data, measure, resp, category_means) {
   title <-
     ifelse(
       measure == "Felicity",
-      paste0("Does [...] sound\nweird or natural?"),
-      paste0("If someone said [...],\nwould that sentence make sense?")
+      paste0("Does [...] sound weird or natural?"),
+      paste0("If someone said [...], would that sentence make sense?")
     )
   if (resp == "1_Place_Trust") {
     p + ggtitle(title)
