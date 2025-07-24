@@ -84,7 +84,7 @@ plot_study2_categories <- function(data, measure, resp, category_means) {
       axis.title.x = element_blank(),
       axis.title.y = element_text(size = 9),
       axis.text.x = element_text(
-        size = 5, angle = 30, hjust = 1,
+        size = 6, angle = 30, hjust = 1,
         colour = ifelse(AI, "red", "black")
       ),
       axis.text.y = element_text(size = 6),
