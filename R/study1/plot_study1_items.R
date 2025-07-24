@@ -29,7 +29,7 @@ plot_study1_items <- function(data, measure, item_means) {
         colour = AI
       ),
       size = 0.4,
-      linewidth = 1.3
+      linewidth = 0.8
     ) +
     scale_colour_manual(values = c("black", "red")) +
     scale_y_continuous(
