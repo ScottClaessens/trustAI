@@ -1,4 +1,4 @@
-# The Trustability of AI
+# Trust in AI is not a Conceptual Confusion
 
 ## Getting Started
 

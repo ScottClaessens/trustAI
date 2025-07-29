@@ -74,7 +74,7 @@ plot_study4_scree|function|2407af08999a3111
 plot_study2_categories|function|7276930a2cf5e39a
 plot_study3_items|function|b38eee9545b26b6f
 plot_study4_clusters|function|4f8f5f7ee4d89aaa
-.Random.seed|object|83de07913850261b
+.Random.seed|object|8b8b05a3d9664af8
 extract_study2_item_means|function|e657374129f726d7
 plot_study1_categories|function|80eceb36fdf2ea81
 fit_study3_model|function|de8d20a01e1a3319
