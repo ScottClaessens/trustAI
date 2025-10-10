@@ -2,6 +2,4 @@
 
 ## Authors
 
-Scott Claessens, scott.claessens@gmail.com
-
-Ethan Landes, ethan.landes@gmail.com
+[redacted for peer review]

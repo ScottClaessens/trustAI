@@ -3,11 +3,11 @@
 **Dataset title:** Clean data from Study 1 for project on "The Trustability 
 of AI"
 
-**Principal investigator:** Dr. Ethan Landes (ethan.landes@gmail.com)
+**Principal investigator:** [redacted for peer review]
 
-**Head researcher:** Dr. Jim Everett (j.a.c.everett@kent.ac.uk)
+**Head researcher:** [redacted for peer review]
 
-**Institution:** University of Kent
+**Institution:** [redacted for peer review]
 
 **File format:** CSV file
 

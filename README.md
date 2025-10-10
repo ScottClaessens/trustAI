@@ -21,10 +21,8 @@ install.packages(c("crew", "bayestestR", "brms", "posterior",
 
 ## Help
 
-Any issues, please email scott.claessens@gmail.com or ethan.landes@gmail.com.
+Any issues, please email [redacted for peer review].
 
 ## Authors
 
-Scott Claessens, scott.claessens@gmail.com
-
-Ethan Landes, ethan.landes@gmail.com
+[redacted for peer review]
