@@ -1,6 +1,7 @@
 # function to plot clusters from study 4
 plot_study4_clusters <- function(study4_data, study4_kmeans) {
-  cluster_labels <- c("Sceptics", "Non-agential trusters", "Agential trusters")
+  cluster_labels <- c("Sceptics", "Non-agential trusters",
+                      "High agency trusters")
   clusters <-
     # get means for every participant
     study4_data %>%
